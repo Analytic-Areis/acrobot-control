@@ -1,0 +1,12 @@
+# This file records the segment order used by Manim.
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00030.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00031.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00032.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00033.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00034.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00035.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00036.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00037.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00038.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00039.mp4'
+file 'file:/Users/bhargav_vemparala/Documents/Academics/Semester-3/ST/project/phase2/phase 2 deliverable/manim-sim/media/videos/acrobot_phase2/480p15/partial_movie_files/AcrobotPhase2/uncached_00040.mp4'
