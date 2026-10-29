@@ -1,0 +1,244 @@
+% =====================================================================
+%  Phase 1 Report -- Acrobot (single column, one-and-a-half spacing)
+% =====================================================================
+\documentclass[10pt,letterpaper]{article}
+\usepackage[top=0.5in,bottom=0.55in,left=0.7in,right=0.7in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}\usepackage{amssymb}\renewcommand{\ttdefault}{pcr}
+\usepackage{amsmath,graphicx,booktabs,array,microtype,xcolor,float}
+\usepackage[compact]{titlesec}
+\usepackage[labelsep=period,font=footnotesize]{caption}
+\usepackage{enumitem}
+\usepackage{cite}
+\usepackage{xurl}
+\usepackage{setspace}\onehalfspacing
+\usepackage[hidelinks]{hyperref}
+
+\renewcommand{\thesection}{\Roman{section}}
+\renewcommand{\thesubsection}{\Alph{subsection}}
+\titleformat{\section}{\normalfont\normalsize\scshape\bfseries}{\thesection.}{0.5em}{}
+\titlespacing*{\section}{0pt}{5pt plus 2pt minus 1pt}{1pt plus 1pt}
+\titleformat{\subsection}[runin]{\normalfont\normalsize\itshape\bfseries}{\thesubsection.}{0.4em}{}[.]
+\titlespacing*{\subsection}{0pt}{3pt plus 1pt minus 1pt}{0.6em}
+\renewcommand{\thetable}{\Roman{table}}
+\captionsetup[figure]{name=Fig.,skip=2pt}
+\captionsetup[table]{name=Table,labelfont=bf,skip=2pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 1pt}
+\setlength{\belowdisplayskip}{2pt plus 1pt minus 1pt}
+\setlength{\abovedisplayshortskip}{0pt}
+\setlength{\belowdisplayshortskip}{1pt}
+\setlength{\intextsep}{3pt plus 1pt minus 2pt}
+\setlist{leftmargin=1.1em,itemsep=0pt,topsep=1pt,parsep=0pt}
+\setlength{\emergencystretch}{1.5em}
+\allowdisplaybreaks\clubpenalty=0\widowpenalty=0\displaywidowpenalty=0
+\newcommand{\Nm}{\,\mathrm{N\,m}}
+\hyphenpenalty=10000\exhyphenpenalty=10000
+\pagestyle{plain}
+
+\begin{document}
+
+\begin{center}
+\begin{singlespace}
+{\fontsize{17}{20}\selectfont Phase 1: Modelling, Equilibria and Linearization of the Acrobot}\\[4pt]
+{\small Bhargav (2025102061) \quad Sreekar (2025102074) \quad Kaushik (2025102071) \quad Divijat (2025102040)}\\[1pt]
+{\footnotesize Control Systems Project \quad$\cdot$\quad Phase 1 Report \quad$\cdot$\quad October 25, 2026}
+\end{singlespace}
+\end{center}
+\vspace{-6pt}
+{\small\textbf{Abstract.} We verify the given Acrobot model, find its zero-torque equilibria, linearize at each, and derive the transfer functions from the elbow torque $\tau$ to both joint angles.\par}
+
+% =====================================================================
+\section{Nonlinear Model}
+% =====================================================================
+\noindent\begin{minipage}[t]{0.6\textwidth}\vspace{0pt}
+\subsection{System and Parameters}
+Two-link pendulum (Fig.~\ref{fig:schematic}) with a passive shoulder and a motor at the elbow [1], [2].
+\begin{itemize}
+\item Angles: $q_1$ = link~1 from the downward vertical; $q_2$ = link~2 relative to link~1; $\varphi=q_1+q_2$.
+\item State: $x=[q_1,\;q_2,\;\dot q_1,\;\dot q_2]^T$.
+\item Input: elbow motor torque $\tau$, $|\tau|\le20\Nm$, the only quantity we command ($\tau=0$ in this phase; set by a controller in later phases).
+\item $m_1=m_2=1$~kg, $l_1=1$~m, $l_2=2$~m, $l_{c1}=0.5$~m, $l_{c2}=1$~m, $I_1=0.083$, $I_2=0.33$~kg\,m$^2$, $g=9.81$~m/s$^2$.
+\end{itemize}
+\subsection{Given Equations of Motion}
+\begin{equation}
+M(q)\ddot q+C(q,\dot q)\dot q=\tau_g(q)+B\tau,\qquad B=[0,\;1]^T\label{eq:eom}
+\end{equation}
+($B$ applies $\tau$ to the elbow equation only; $c_2=\cos q_2$, $s_2=\sin q_2$.)
+\end{minipage}\hfill
+\begin{minipage}[t]{0.36\textwidth}\vspace{0pt}
+\centering
+\includegraphics[width=\linewidth]{acrobot_diagram.pdf}
+\captionof{figure}{Acrobot schematic (to scale); dots mark the centres of mass.}\label{fig:schematic}
+\end{minipage}
+
+\subsection{Derivation}
+\textit{1) Potential energy and gravity torque:}
+\begin{equation}
+U=-(m_1l_{c1}+m_2l_1)g\cos q_1-m_2l_{c2}g\cos\varphi=-14.715\cos q_1-9.81\cos\varphi,\qquad
+\tau_g=-\frac{\partial U}{\partial q}=-9.81\begin{bmatrix}1.5\sin q_1+\sin\varphi\\ \sin\varphi\end{bmatrix}.\label{eq:tg}
+\end{equation}
+\textit{2) Kinetic energy and inertia matrix:} the velocity of centre~2 is the elbow velocity ($l_1\dot q_1$) plus the rotation about the elbow ($l_{c2}\dot\varphi$), at angle $q_2$ apart (law of cosines):
+\begin{equation}
+T=\tfrac12(m_1l_{c1}^2+I_1)\dot q_1^2+\tfrac12I_2\dot\varphi^2+\tfrac12m_2\big(l_1^2\dot q_1^2+l_{c2}^2\dot\varphi^2+2l_1l_{c2}c_2\dot q_1\dot\varphi\big)=\tfrac12\dot q^TM\dot q,\quad
+M(q)=\begin{bmatrix}2.663+2c_2 & 1.33+c_2\\ 1.33+c_2 & 1.33\end{bmatrix}.\label{eq:M}
+\end{equation}
+\textit{3) Coriolis term (Euler--Lagrange):} with $\partial T/\partial\dot q=M\dot q$ and $\dot M=\frac{\partial M}{\partial q_2}\dot q_2=-s_2\dot q_2\left[\begin{smallmatrix}2&1\\1&0\end{smallmatrix}\right]$,
+\begin{equation}
+\frac{d}{dt}\frac{\partial T}{\partial\dot q}-\frac{\partial T}{\partial q}=\tau_g+B\tau
+\;\Rightarrow\; M\ddot q+\underbrace{\Big(\dot M\dot q-\frac{\partial T}{\partial q}\Big)}_{=\,C\dot q}=\tau_g+B\tau,
+\qquad C(q,\dot q)=s_2\begin{bmatrix}-2\dot q_2 & -\dot q_2\\ \dot q_1 & 0\end{bmatrix}.\label{eq:C}
+\end{equation}
+These are the same $\tau_g$, $M$ and $C$ as in the given model.
+\subsection{State-Space Form}
+$M$ is always invertible, so solving~\eqref{eq:eom} for $\ddot q$ gives the state equation:
+\begin{equation}
+\det M=(2.663+2c_2)(1.33)-(1.33+c_2)^2=1.7729-c_2^2\ge0.7729>0\;\;(c_2^2\le1),\qquad
+\dot x=f(x,\tau)=\begin{bmatrix}\dot q\\ M^{-1}\big(\tau_g+B\tau-C\dot q\big)\end{bmatrix}.\label{eq:f}
+\end{equation}
+
+% =====================================================================
+\section{Equilibria}
+% =====================================================================
+\subsection{Conditions}
+At rest $\dot q=\ddot q=0$, and the input torque is given as $\tau^*=0$. Then~\eqref{eq:eom} gives $\tau_g(q^*)=0$:
+\begin{equation*}
+\text{row 2: }\sin(q_1^*+q_2^*)=0,\qquad
+\text{row 1: }1.5\sin q_1^*+\underbrace{\sin(q_1^*+q_2^*)}_{=0}=0\;\Rightarrow\;\sin q_1^*=0 .
+\end{equation*}
+\subsection{Solutions}
+$q_1^*\in\{0,\pi\}$, $q_1^*+q_2^*\in\{0,\pi\}$ $\Rightarrow$ $q_2^*\in\{0,\pi\}$ (mod $2\pi$): \textbf{four equilibria}, all with both links vertical (Table~\ref{tab:eq}).
+
+\begin{table}[h]
+\centering
+\caption{Equilibria for $\tau^*=0$}\label{tab:eq}
+\footnotesize\setlength{\tabcolsep}{6pt}\renewcommand{\arraystretch}{0.9}
+\begin{tabular}{@{}clcrl@{}}
+\toprule
+ & Posture & $(q_1^*,q_2^*)$ & $U$ [J] & Description\\
+\midrule
+$E_1$ & down--down & $(0,0)$ & $-24.525$ & both links hanging\\
+$E_2$ & down--up & $(0,\pi)$ & $-4.905$ & link 1 down, link 2 up\\
+$E_3$ & up--up & $(\pi,0)$ & $+24.525$ & fully upright (target)\\
+$E_4$ & up--down & $(\pi,\pi)$ & $+4.905$ & link 1 up, link 2 down\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% =====================================================================
+\section{Linearization}
+% =====================================================================
+\subsection{Deviation Variables}
+$\tilde q=[q_1-q_1^*,\;q_2-q_2^*]^T$, $\tilde x=[\tilde q;\dot{\tilde q}]=x-x^*$, $\tilde\tau=\tau-\tau^*=\tau$. First-order Taylor expansion of~\eqref{eq:f} about $(x^*,0)$, using $f(x^*,0)=0$: $\dot{\tilde x}\approx\frac{\partial f}{\partial x}\big|_*\tilde x+\frac{\partial f}{\partial\tau}\big|_*\tilde\tau$.
+\subsection{Jacobians}
+\textit{Top half:} $\tfrac{d}{dt}\tilde q=\dot{\tilde q}$ $\Rightarrow$ rows $[\,0\;\;I_2\,]$. \textit{Bottom half:} $h=M^{-1}(\tau_g+B\tau-C\dot q)$; at $(x^*,0)$, $\partial(C\dot q)/\partial\dot q=0$ ($C\dot q$ is quadratic in $\dot q$, $\dot q^*=0$) and $(\partial M^{-1}/\partial q)(\tau_g+B\tau)=0$ ($\tau_g(q^*)=0$, $\tau^*=0$). Hence
+\begin{equation}
+\ddot{\tilde q}=P\tilde q+r\tilde\tau,\quad P=M(q^*)^{-1}K(q^*),\quad r=M(q^*)^{-1}B,\qquad
+K(q^*)=\frac{\partial\tau_g}{\partial q}\Big|_{q^*}=-9.81\begin{bmatrix}1.5\cos q_1^*+\cos\varphi^* & \cos\varphi^*\\ \cos\varphi^* & \cos\varphi^*\end{bmatrix}.\label{eq:K}
+\end{equation}
+\subsection{Linear State-Space Model}
+Stacking both halves, with the joint angles as outputs, $y=\tilde q=[q_1-q_1^*,\;q_2-q_2^*]^T$:
+\begin{equation}
+\boxed{\;\dot{\tilde x}=A\tilde x+B_\ell\tilde\tau,\quad y=C_y\tilde x+D\tilde\tau,\qquad
+A=\begin{bmatrix}0 & I_2\\ P & 0\end{bmatrix}\!,\;
+B_\ell=\begin{bmatrix}0\\ r\end{bmatrix}\!,\;
+C_y=\begin{bmatrix}I_2 & 0\end{bmatrix}\!,\; D=0\;}\label{eq:AB}
+\end{equation}
+\subsection{Example: $E_1=(0,0)$} $\cos q_1^*=\cos\varphi^*=c_2=1$:
+\begin{gather*}
+K=\begin{bmatrix}-24.525&-9.81\\-9.81&-9.81\end{bmatrix}\!,\quad
+M=\begin{bmatrix}4.663&2.33\\2.33&1.33\end{bmatrix}\!,\quad
+\det M=0.7729,\quad M^{-1}=\frac{1}{0.7729}\begin{bmatrix}1.33&-2.33\\-2.33&4.663\end{bmatrix}\!,\\
+P_{E1}=M^{-1}K=\begin{bmatrix}-12.6292&12.6926\\14.7488&-29.6119\end{bmatrix}\!,\qquad
+r_{E1}=\begin{bmatrix}-3.0147\\6.0332\end{bmatrix}\!.
+\end{gather*}
+
+\noindent\begin{minipage}[t]{0.42\textwidth}\vspace{0pt}
+\subsection{All Equilibria}
+$M$ depends only on $q_2^*$; $K$ only on the signs of $\cos q_1^*$, $\cos\varphi^*$. Upside down, gravity flips: $K_{E3}=-K_{E1}$ with $M_{E3}=M_{E1}$, so $P_{E3}=-P_{E1}$; likewise $P_{E4}=-P_{E2}$. Results in Table~\ref{tab:lin}; with~\eqref{eq:AB} they give $(A,B_\ell,C_y,D)$ at each equilibrium.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.55\textwidth}\vspace{2pt}
+\centering
+\captionof{table}{Linearization results ($\det M=0.7729$ at all four)}\label{tab:lin}
+\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{1.0}
+\begin{tabular}{@{}ccccc@{}}
+\toprule
+ & $(\cos q_1^*,\cos\varphi^*)$ & $M(q^*)$ & $P=M^{-1}K$ & $r=M^{-1}B$\\
+\midrule
+$E_1$ & $(1,1)$ & $\left[\begin{smallmatrix}4.663&2.33\\2.33&1.33\end{smallmatrix}\right]$ & $\left[\begin{smallmatrix}-12.6292&12.6926\\14.7488&-29.6119\end{smallmatrix}\right]$ & $\left[\begin{smallmatrix}-3.0147\\6.0332\end{smallmatrix}\right]$\\
+$E_2$ & $(1,-1)$ & $\left[\begin{smallmatrix}0.663&0.33\\0.33&1.33\end{smallmatrix}\right]$ & $\left[\begin{smallmatrix}-12.6292&12.6926\\10.5095&4.2266\end{smallmatrix}\right]$ & $\left[\begin{smallmatrix}-0.4270\\0.8578\end{smallmatrix}\right]$\\
+$E_3$ & $(-1,-1)$ & as $E_1$ & $-P_{E1}$ & $r_{E1}$\\
+$E_4$ & $(-1,1)$ & as $E_2$ & $-P_{E2}$ & $r_{E2}$\\
+\bottomrule
+\end{tabular}
+\end{minipage}
+
+% =====================================================================
+\section{Transfer Functions}
+% =====================================================================
+\subsection{Laplace Transform}
+With $\tilde Q_i(s)=\mathcal L\{\tilde q_i(t)\}$, $\tilde{\mathcal T}(s)=\mathcal L\{\tilde\tau(t)\}$, $\tilde Q=[\tilde Q_1,\tilde Q_2]^T$ and zero initial conditions ($\ddot{\tilde q}\to s^2\tilde Q$):
+\begin{equation*}
+s^2\tilde Q=P\tilde Q+r\tilde{\mathcal T}\;\Rightarrow\;(s^2I-P)\,\tilde Q(s)=r\,\tilde{\mathcal T}(s),\qquad
+(s^2I-P)^{-1}=\frac{1}{\Delta(s)}\begin{bmatrix}s^2-P_{22}&P_{12}\\P_{21}&s^2-P_{11}\end{bmatrix}\!,\quad
+\Delta(s)=s^4-\operatorname{tr}(P)\,s^2+\det P .
+\end{equation*}
+\subsection{General Formula} Multiplying by $r$ and dividing each row by $\tilde{\mathcal T}$ ($G_i=\tilde Q_i/\tilde{\mathcal T}$):
+\begin{equation}
+\boxed{\;G_1(s)=\frac{r_1s^2+(P_{12}r_2-P_{22}r_1)}{\Delta(s)},\qquad
+G_2(s)=\frac{r_2s^2+(P_{21}r_1-P_{11}r_2)}{\Delta(s)}\;}\label{eq:G}
+\end{equation}
+\textit{Poles:} roots of $\Delta$ (= eigenvalues of $A$); with $\lambda=s^2$, $\lambda^2-\operatorname{tr}(P)\lambda+\det P=0$, then $s=\pm\sqrt\lambda$.
+\textit{Zeros:} $s^2=-(P_{12}r_2-P_{22}r_1)/r_1$ for $G_1$ and $s^2=-(P_{21}r_1-P_{11}r_2)/r_2$ for $G_2$.
+
+\noindent\begin{minipage}{\linewidth}
+\subsection{Example: $E_1$}
+$\operatorname{tr}P=-42.2410$, $\det P=186.7719$ $\Rightarrow$ $\lambda=s^2=-5.018,\,-37.224$ $\Rightarrow$ poles $\pm j2.2400,\ \pm j6.1011$; numerator constants $P_{12}r_2-P_{22}r_1=-12.6926$, $P_{21}r_1-P_{11}r_2=31.7316$ $\Rightarrow$ $G_1=-3.0147\,(s^2+4.2103)/\Delta$, $G_2=6.0332\,(s^2+5.2595)/\Delta$ (row $E_1$ of Table~\ref{tab:tf}).
+\end{minipage}
+
+\begin{table}[h]
+\centering
+\caption{Transfer functions $G_i(s)=N_i(s)/\Delta(s)$ at the four equilibria}\label{tab:tf}
+\footnotesize\setlength{\tabcolsep}{4pt}\renewcommand{\arraystretch}{0.85}
+\begin{tabular}{@{}cllllll@{}}
+\toprule
+ & Denominator $\Delta(s)$ (monic) & $N_1(s)$ \;($\tau\to q_1$) & $N_2(s)$ \;($\tau\to q_2$) & Poles & Zeros of $G_1$ & Zeros of $G_2$\\
+\midrule
+$E_1$ & $s^4+42.2410\,s^2+186.7719$ & $-3.0147\,(s^2+4.2103)$ & $6.0332\,(s^2+5.2595)$ & $\pm j2.2400,\ \pm j6.1011$ & $\pm j2.0519$ & $\pm j2.2934$\\
+$E_2$ & $s^4+8.4025\,s^2-186.7719$ & $-0.4270\,(s^2-29.7273)$ & $0.8578\,(s^2+7.3982)$ & $\pm3.1775,\ \pm j4.3010$ & $\pm5.4523$ & $\pm j2.7200$\\
+$E_3$ & $s^4-42.2410\,s^2+186.7719$ & $-3.0147\,(s^2-4.2103)$ & $6.0332\,(s^2-5.2595)$ & $\pm2.2400,\ \pm6.1011$ & $\pm2.0519$ & $\pm2.2934$\\
+$E_4$ & $s^4-8.4025\,s^2-186.7719$ & $-0.4270\,(s^2+29.7273)$ & $0.8578\,(s^2-7.3982)$ & $\pm4.3010,\ \pm j3.1775$ & $\pm j5.4523$ & $\pm2.7200$\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{All Equilibria}
+Table~\ref{tab:tf}. With no friction only even powers of $s$ occur, so poles and zeros come in pairs $\pm p$; since $P_{E3}=-P_{E1}$, each $\pm j\omega$ at $E_1$ becomes $\pm\omega$ at $E_3$ (likewise $E_2$/$E_4$).
+
+% =====================================================================
+\section{Verification}
+% =====================================================================
+\noindent\begin{minipage}[t]{0.66\textwidth}\vspace{0pt}
+\begin{itemize}
+\item The model derivation and all values in Tables~\ref{tab:lin} and~\ref{tab:tf} were verified in MATLAB (agreement to four decimals).
+\item Nonlinear~\eqref{eq:f} vs.\ linear~\eqref{eq:AB}, simulated in Python from the same small deviation, $\tau=0$ (Fig.~\ref{fig:sim}): near $E_1$ from $\tilde q(0)=(0.1,-0.1)$~rad they agree within $1.0^\circ$ ($q_1$) and $2.0^\circ$ ($q_2$) over 8~s; near $E_3$ from $\tilde q_1(0)=10^{-3}$~rad the error is $0.02\%$ at $|\tilde q_1|=1^\circ$.
+\item With $\tau=0$, $T+U$ stays constant to $10^{-8}$ (no friction).
+\item \textbf{Animation} (Manim) showing the model, the four equilibria and their responses: \href{https://drive.google.com/file/d/18Ic6QdsY37QBfvFIwmVA_8Z-u4AyNPdg/view?usp=sharing}{\textcolor{blue!60!black}{\textbf{watch the video}}}.
+\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}\vspace{-26pt}
+\centering
+\includegraphics[width=\linewidth]{sim.pdf}
+\captionof{figure}{Nonlinear (colour) vs.\ linear (black) responses near (a) $E_1$, (b) $E_3$ (Python).}\label{fig:sim}
+\end{minipage}
+
+\vspace{9pt}
+\begin{singlespace}
+{\footnotesize
+\textbf{References.}
+[1] M.~W. Spong, ``The swing up control problem for the Acrobot,'' \emph{IEEE Control Syst. Mag.}, vol.~15, no.~1, pp.~49--55, 1995.\quad
+[2] R.~Tedrake, \emph{Underactuated Robotics}, MIT, 2024. [Online]. Available: https://underactuated.csail.mit.edu\par}
+\end{singlespace}
+
+\end{document}

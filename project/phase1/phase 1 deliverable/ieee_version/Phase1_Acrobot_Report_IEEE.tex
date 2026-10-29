@@ -52,11 +52,11 @@
 Bhargav & Sreekar & Kaushik & Divijat\\
 {\footnotesize\itshape 2025102061} & {\footnotesize\itshape 2025102074} & {\footnotesize\itshape 2025102071} & {\footnotesize\itshape 2025102040}
 \end{tabular}\\[3pt]
-{\footnotesize Control Systems Project --- Phase 1 Report --- October 25, 2026}
+{\footnotesize Control Systems Project \quad$\cdot$\quad Phase 1 Report \quad$\cdot$\quad October 25, 2026}
 \end{center}
 \vspace{4pt}}]
 
-{\footnotesize\bfseries\itshape Abstract\/\textemdash\upshape
+{\footnotesize\bfseries\itshape Abstract.\/\upshape\ 
 We verify the given Acrobot model, find its equilibria for zero motor torque, linearize the dynamics at each equilibrium, and derive the transfer functions from the elbow torque $\tau$ to both joint angles. The linear models are checked against nonlinear simulation.\par}
 
 % =====================================================================
@@ -67,7 +67,7 @@ Two-link pendulum (Fig.~\ref{fig:schematic}) with a passive shoulder and a motor
 \begin{itemize}
 \item Angles: $q_1$ = link~1 from the downward vertical; $q_2$ = link~2 relative to link~1; $\varphi=q_1+q_2$.
 \item State: $x=[q_1,\;q_2,\;\dot q_1,\;\dot q_2]^T$.
-\item Input: elbow motor torque $\tau$, $|\tau|\le20\Nm$ --- the only quantity we command ($\tau=0$ in this phase; set by a controller in later phases).
+\item Input: elbow motor torque $\tau$, $|\tau|\le20\Nm$, the only quantity we command ($\tau=0$ in this phase; set by a controller in later phases).
 \item $m_1=m_2=1$~kg, $l_1=1$~m, $l_2=2$~m, $l_{c1}=0.5$~m, $l_{c2}=1$~m, $I_1=0.083$, $I_2=0.33$~kg\,m$^2$, $g=9.81$~m/s$^2$.
 \end{itemize}
 
@@ -287,8 +287,7 @@ Table~\ref{tab:tf} lists all four equilibria. With no friction only even powers 
 \item The model derivation and all values in Tables~\ref{tab:tf} and~\ref{tab:lin} were verified in MATLAB (agreement to four decimals).
 \item Nonlinear~\eqref{eq:f} vs.\ linear~\eqref{eq:AB}, simulated in Python from the same small deviation, $\tau=0$ (Fig.~\ref{fig:sim}): near $E_1$ from $\tilde q(0)=(0.1,-0.1)$~rad they agree within $1.0^\circ$ ($q_1$) and $2.0^\circ$ ($q_2$) over 8~s; near $E_3$ from $\tilde q_1(0)=10^{-3}$~rad the error is $0.02\%$ at $|\tilde q_1|=1^\circ$.
 \item With $\tau=0$, $T+U$ stays constant to $10^{-8}$ (no friction).
-\item \textbf{Animation} (Manim) of the model, the four equilibria, the nonlinear vs.\ linear responses near each equilibrium and the pole--zero maps: \href{https://drive.google.com/file/d/18Ic6QdsY37QBfvFIwmVA_8Z-u4AyNPdg/view?usp=sharing}{\textcolor{blue!60!black}{\textbf{watch the video}}}\\
-{\footnotesize\urlstyle{same}\textcolor{blue!60!black}{\url{https://drive.google.com/file/d/18Ic6QdsY37QBfvFIwmVA_8Z-u4AyNPdg/view?usp=sharing}}}
+\item \textbf{Animation} (Manim) of the model, the four equilibria, the nonlinear vs.\ linear responses near each equilibrium and the pole--zero maps: \href{https://drive.google.com/file/d/18Ic6QdsY37QBfvFIwmVA_8Z-u4AyNPdg/view?usp=sharing}{\textcolor{blue!60!black}{\textbf{watch the video}}}.
 \end{itemize}
 
 \begin{figure}[!h]
