@@ -152,6 +152,7 @@ class OpenLoop:
 
 class SingleAnglePD:
     """tau = -(Kp*e + Kd*e_dot), e = deviation of ONE measured joint angle."""
+    tunable = True             # the Kp / Kd sliders retune it live
 
     def __init__(self, joint, kp, kd):
         self.j, self.kp, self.kd = joint, kp, kd
@@ -319,6 +320,8 @@ def load_acrobot(cid):
 
 # ---------------------------------------------------------------- simulator
 class AcrobotSim:
+    MODES = MODES
+    make_controller = staticmethod(make_controller)
     def __init__(self):
         self.cid = p.connect(p.DIRECT)
         p.setGravity(0, 0, -G, physicsClientId=self.cid)
@@ -333,15 +336,15 @@ class AcrobotSim:
         self.A, self.B = linearize(self.q_star)
         Phi = expm(np.block([[self.A, self.B], [np.zeros((1, 5))]]) * DT)
         self.Ad, self.Bd = Phi[:4, :4], Phi[:4, 4]
-        self.ctrl = make_controller(mode, self.A, self.B, joint, kp, kd)
-        self.ctrl_lin = make_controller(mode, self.A, self.B, joint, kp, kd)
+        self.ctrl = self.make_controller(mode, self.A, self.B, joint, kp, kd)
+        self.ctrl_lin = self.make_controller(mode, self.A, self.B, joint, kp, kd)
         self.dq0 = np.radians(dq_deg)
         self.w0 = np.radians(w0_deg)
         self.reset()
 
     def set_gains(self, kp, kd):
         for c in (self.ctrl, self.ctrl_lin):
-            if isinstance(c, SingleAnglePD):
+            if getattr(c, "tunable", False):
                 c.kp, c.kd = kp, kd
 
     def reset(self):
@@ -376,14 +379,20 @@ class AcrobotSim:
     # -- one physics step
     def step(self):
         dq, qd = self.deviation()
-        self.tau = self.ctrl(dq[self.joint], qd[self.joint], DT)
+        if getattr(self.ctrl, "full_state", False):          # uses the whole state
+            self.tau = self.ctrl.full(dq, qd)
+        else:                                                # uses one measured angle
+            self.tau = self.ctrl(dq[self.joint], qd[self.joint], DT)
         p.setJointMotorControl2(self.robot, 1, p.TORQUE_CONTROL, force=self.tau,
                                 physicsClientId=self.cid)
         p.stepSimulation(physicsClientId=self.cid)
 
         if self.lin_ok:
             x = self.x_lin
-            tau_l = self.ctrl_lin(x[self.joint], x[self.joint + 2], DT)
+            if getattr(self.ctrl_lin, "full_state", False):
+                tau_l = self.ctrl_lin.full(x[:2], x[2:])
+            else:
+                tau_l = self.ctrl_lin(x[self.joint], x[self.joint + 2], DT)
             self.x_lin = self.Ad @ x + self.Bd * tau_l
             if np.max(np.abs(self.x_lin[:2])) > np.pi:
                 self.lin_ok = False      # linear model left its region of validity
@@ -407,7 +416,7 @@ class AcrobotSim:
         return np.linalg.eigvals(self.ctrl.closed_loop_A(self.A, self.B))
 
     def describe(self):
-        ctrl = MODES[self.mode]
+        ctrl = self.MODES[self.mode]
         if self.mode == 1:
             ctrl += f" on q{self.joint + 1} (Kp={self.ctrl.kp:.0f}, Kd={self.ctrl.kd:.0f})"
         elif self.mode == 2:
@@ -465,6 +474,10 @@ COL = dict(link1="#2563eb", link2="#f97316", ghost="#475569", target="#cbd5e1",
 class Dashboard:
     WINDOW = 10.0      # seconds shown in the time plots
     TRAIL = 1.5        # seconds of tip trail
+    SIM = AcrobotSim
+    TITLE = "Acrobot - Phase 2 stability explorer"
+    MODE_LABELS = ["Open loop (τ = 0)", "PD on one angle", "Observer + LQR"]   # index = mode
+    DEFAULT_EQ, DEFAULT_MODE, DEFAULT_IC = 1, 0, (20.0, -10.0)
 
     def __init__(self):
         import matplotlib
@@ -477,7 +490,7 @@ class Dashboard:
         matplotlib.rcParams.update({"toolbar": "None", "font.size": 9,
                                     "axes.titlesize": 10, "axes.titleweight": "bold"})
         self.plt = plt
-        self.sim = AcrobotSim()
+        self.sim = self.SIM()
         self.paused = False
         self.drag = None          # None | 0 (dragging link 1) | 1 (dragging link 2)
         self.drag_q = None
@@ -490,7 +503,7 @@ class Dashboard:
 
         fig = self.fig = plt.figure(figsize=(13.5, 8.2), facecolor="white")
         try:
-            fig.canvas.manager.set_window_title("Acrobot - Phase 2 stability explorer")
+            fig.canvas.manager.set_window_title(self.TITLE)
         except AttributeError:
             pass
 
@@ -577,20 +590,21 @@ class Dashboard:
             fig.text(rect[0], rect[1] + rect[3] + 0.012, title, fontsize=10, weight="bold")
             return a
 
-        def radios(rect, title, labels):
-            return RadioButtons(panel(rect, title), labels, active=0, activecolor=COL["link1"],
+        def radios(rect, title, labels, active=0):
+            return RadioButtons(panel(rect, title), labels, active=active, activecolor=COL["link1"],
                                 useblit=False, label_props={"fontsize": [9.5] * len(labels)},
                                 radio_props={"s": [60] * len(labels)})
 
         self.rb_eq = radios([0.015, 0.04, 0.095, 0.19], "Equilibrium",
-                            ["E1 down-down", "E2 down-up", "E3 up-up", "E4 up-down"])
-        self.rb_mode = radios([0.125, 0.04, 0.12, 0.19], "Controller",
-                              ["Open loop (τ = 0)", "PD on one angle", "Observer + LQR"])
+                            ["E1 down-down", "E2 down-up", "E3 up-up", "E4 up-down"],
+                            active=self.DEFAULT_EQ - 1)
+        self.rb_mode = radios([0.125, 0.04, 0.12, 0.19], "Controller", self.MODE_LABELS,
+                              active=self.DEFAULT_MODE)
         self.rb_joint = radios([0.26, 0.04, 0.085, 0.19], "Measured angle",
                                ["q1 shoulder", "q2 elbow"])
 
         # every value has a slider (where useful) AND a box you can type into + Enter
-        self.vals = {"dq1": 20.0, "dq2": -10.0, "w1": 0.0, "w2": 0.0,
+        self.vals = {"dq1": self.DEFAULT_IC[0], "dq2": self.DEFAULT_IC[1], "w1": 0.0, "w2": 0.0,
                      "kp": 0.0, "kd": 0.0, "speed": 1.0}
         self.sliders, self.boxes, self.row_labels = {}, {}, {}
 
@@ -637,7 +651,7 @@ class Dashboard:
         self.b_kick = button([bx[3], 0.012, bw, 0.045], "Kick shoulder")
         self.b_ghost = button([bx[4], 0.012, bw, 0.045], "Hide linear")
         self.b_save = button([bx[5], 0.012, bw, 0.045], "Save plot")
-        fig.text(0.015, 0.962, "Acrobot - Phase 2 stability explorer", fontsize=14, weight="bold")
+        fig.text(0.015, 0.962, self.TITLE, fontsize=14, weight="bold")
         fig.text(0.985, 0.965, "physics: PyBullet  ·  type a value + Enter  ·  keys: space pause, r reset, 0 reset to q*, k kick, s save, q quit",
                  fontsize=8.5, color="#64748b", ha="right")
 
@@ -660,7 +674,7 @@ class Dashboard:
     # ---------------------------------------------------------------- actions
     def selection(self):
         eq = ["E1", "E2", "E3", "E4"].index(self.rb_eq.value_selected[:2]) + 1
-        mode = ["Open", "PD o", "Obse"].index(self.rb_mode.value_selected[:4])
+        mode = self.MODE_LABELS.index(self.rb_mode.value_selected)
         joint = 0 if self.rb_joint.value_selected.startswith("q1") else 1
         return eq, mode, joint
 
