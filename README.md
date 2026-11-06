@@ -5,7 +5,7 @@
 [![Status](https://img.shields.io/badge/Phases%201--4-Validated-brightgreen.svg)](#)
 [![License](https://img.shields.io/badge/License-Academic%20Use-lightgrey.svg)](#)
 
-A comprehensive systems and control engineering project on the **Acrobot**—an underactuated planar two-link inverted pendulum with an actuator at the elbow and a completely passive shoulder.
+A complete systems and control engineering project on the **Acrobot**—an underactuated planar two-link inverted pendulum with an actuator at the elbow and a fully passive shoulder.
 
 This repository covers the complete analytical and numerical workflow across all four project phases: from Lagrangian formulation and equilibrium bifurcation manifolds to multivariable stability analysis, Poisson sensitivity proofs, full-state LQR balancing with torque saturation, energy-based Spong swing-up, and hybrid switching architecture.
 
