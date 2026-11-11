@@ -1,0 +1,21 @@
+\begin{algorithm}[H]
+\caption{Controller design and limits (\texttt{Acrobot\_Phase3\_Design.m}, \texttt{Acrobot\_Phase3\_Main.m})}
+\label{alg:p3}
+\begin{algorithmic}[1]
+\For{each design (LQR at $E_2,E_3,E_4$; pole placement at $E_3$; elbow PD at $E_1$)}
+  \State $(A,B_\ell)\gets$ \Call{Linearize}{$q^*$}
+  \If{LQR} \State $(K,S)\gets\texttt{lqr}(A,B_\ell,Q=I,R)$; \quad $c^*\gets\tau_{\max}^2/(KS^{-1}K^T)$ \Comment{guaranteed region}
+  \ElsIf{pole placement} \State $K\gets\texttt{place}(A,B_\ell,\{-3,-4,-5,-6\})$
+  \Else \State $K\gets[0,\ K_p,\ 0,\ K_d]$ \Comment{elbow angle only}
+  \EndIf
+  \State print $K$ and $\operatorname{eig}(A-B_\ell K)$
+\EndFor
+\Function{RegionOfAttraction}{$K$, $q^*$, grid of $(\tilde q_1(0),\tilde q_2(0))$}
+  \For{each grid point}
+    \State simulate $\tau=\operatorname{sat}(-K\tilde x)$ for 10 s from rest \Comment{nonlinear model}
+    \State mark it recovered if it ends within $1^\circ$ and $0.05$ rad/s of $q^*$
+  \EndFor
+  \State \Return the map, the share recovered and the largest offset along each axis
+\EndFunction
+\end{algorithmic}
+\end{algorithm}

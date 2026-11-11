@@ -1,0 +1,21 @@
+\begin{algorithm}[H]
+\caption{Stability analysis and single-angle test (\texttt{Acrobot\_Phase2\_Main.m})}
+\label{alg:p2}
+\begin{algorithmic}[1]
+\For{each equilibrium $E_k\in\{E_1,E_2,E_3,E_4\}$}
+  \State $(A,B_\ell)\gets$ \Call{Linearize}{$q^*_k$}; \quad poles $\gets\operatorname{eig}(A)$
+  \State $G_1,G_2\gets$ transfer functions $\tau\to q_1$, $\tau\to q_2$; \quad zeros $\gets$ roots of their numerators
+  \State check $\operatorname{rank}\mathcal C=\operatorname{rank}\mathcal O_1=\operatorname{rank}\mathcal O_2=4$ \Comment{minimal: poles of $G_j$ = eig$(A)$}
+  \State verdict $\gets$ asymptotically / marginally stable / unstable from the signs of $\operatorname{Re}(\text{poles})$
+\EndFor
+\For{$E_k\in\{E_2,E_3,E_4\}$} \Comment{nonlinear check}
+  \State simulate $\tau=0$ from a $0.01^\circ$ offset (\texttt{ode45})
+  \State fit the slope of $\ln\|\tilde q(t)\|$ and compare it with the largest RHP pole
+\EndFor
+\For{measured angle $j\in\{1,2\}$ at $E_3$} \Comment{PD from one angle}
+  \State write $G_j=(b_2s^2+b_0)/\Delta(s)$
+  \If{$b_2\,b_0<0$} \State PD is impossible (no Hurwitz $K_p,K_d$) \EndIf
+  \State grid-search $(K_p,K_d)$: record the smallest $\max\operatorname{Re}\lambda(A-B_\ell F)$
+\EndFor
+\end{algorithmic}
+\end{algorithm}

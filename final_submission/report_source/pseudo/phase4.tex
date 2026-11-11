@@ -1,0 +1,21 @@
+\begin{algorithm}[H]
+\caption{Hybrid swing-up controller (\texttt{Acrobot\_Phase4\_Controller.m}) and tests (\texttt{Acrobot\_Phase4\_Main.m})}
+\label{alg:p4}
+\begin{algorithmic}[1]
+\Function{Controller}{$x$}
+  \State $\tilde x\gets$ deviation of $x$ from the upright $E_3$ (angles wrapped to $\pm\pi$)
+  \If{$\tilde x^TS\tilde x<c_{sw}=5$}
+    \State $\tau\gets-K\tilde x$ \Comment{catch: upright LQR}
+  \Else \Comment{swing-up: energy pumping}
+    \State $E\gets\frac12\dot q^TM\dot q+U(q)$
+    \State $v\gets-k_1\tilde q_2-k_2\dot q_2+k_3\,\dot q_1\,(E-E_{top})$
+    \State $\tau\gets(M_{22}-M_{21}M_{12}/M_{11})\,v+h_2-M_{21}h_1/M_{11}$ \Comment{partial feedback linearization}
+  \EndIf
+  \State \Return $\operatorname{sat}(\tau)$ \Comment{$|\tau|\le20\Nm$}
+\EndFunction
+\For{each start (three chosen starts, then 40 random starts near hanging)}
+  \State simulate with fixed-step RK4 (1 ms) for 30--40 s, calling \Call{Controller}{} every step
+  \State record the first catch time, the share of time at $|\tau|=20$, and whether $E_3$ is held
+\EndFor
+\end{algorithmic}
+\end{algorithm}

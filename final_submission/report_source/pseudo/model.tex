@@ -1,0 +1,16 @@
+\begin{algorithm}[H]
+\caption{Nonlinear dynamics $\dot x=f(x,\tau)$ (\texttt{Acrobot\_Nonlinear\_Dynamics.m}) and linearization (\texttt{Acrobot\_Linearize.m})}
+\label{alg:model}
+\begin{algorithmic}[1]
+\Function{Dynamics}{$x=[q_1,q_2,\dot q_1,\dot q_2]$, $\tau$}
+  \State $\tau\gets\max(-20,\min(20,\tau))$ \Comment{motor limit}
+  \State build $M(q)$, $C(q,\dot q)$ and $\tau_g(q)$ from the given model
+  \State solve $M\,\ddot q=\tau_g+B\tau-C\dot q$ for $\ddot q$ \Comment{backslash, never $M^{-1}$}
+  \State \Return $[\dot q;\ \ddot q]$
+\EndFunction
+\Function{Linearize}{$q^*$}
+  \State $K\gets\partial\tau_g/\partial q$ at $q^*$; \quad $P\gets M(q^*)^{-1}K$; \quad $r\gets M(q^*)^{-1}B$
+  \State \Return $A=\begin{bmatrix}0&I\\P&0\end{bmatrix}$, $B_\ell=\begin{bmatrix}0\\r\end{bmatrix}$
+\EndFunction
+\end{algorithmic}
+\end{algorithm}

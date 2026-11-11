@@ -1,0 +1,41 @@
+\begin{algorithm}[H]
+\caption{Learned swing-up: environment step and SAC training (\texttt{acrobot\_env.py}, \texttt{train.py})}
+\label{alg:p5train}
+\begin{algorithmic}[1]
+\Function{Reset}{}
+  \State $x\gets$ random start near hanging; \quad $m_1,m_2\gets1$ kg \Comment{robust policy: $m_i\sim U[0.7,1.3]$ kg}
+\EndFunction
+\Function{EnvStep}{$x$, action $a\in[-1,1]$}
+  \State $\tau\gets20a$; \quad integrate the model with masses $m_1,m_2$ for 20 ms (four RK4 steps of 5 ms)
+  \State $r\gets-((E-E_{top})/E_{top})^2-0.3(1+\cos q_1)-0.1(1-\cos q_2)-0.001(\tau/20)^2$
+  \If{$\tilde x^TS\tilde x<5$} \State $r\gets r+100$; episode ends \Comment{reached the LQR catch zone}
+  \EndIf
+  \State $o\gets[\cos q_1,\sin q_1,\cos q_2,\sin q_2,\dot q_1/10,\dot q_2/10]$ \Comment{robust policy: append $(E_{top}-E)/E_{top}$}
+  \State \Return $o$, $r$
+\EndFunction
+\State initialise actor $\pi_\theta$, critics $Q_{\phi_1},Q_{\phi_2}$ (2$\times$256 each), empty replay buffer
+\For{$10^6$ environment steps (4 environments in parallel)}
+  \State $a\sim\pi_\theta(\cdot\mid o)$; \quad $(o',r)\gets$ \Call{EnvStep}{$x,a$}; \quad store $(o,a,r,o')$ in the buffer
+  \State sample a batch of 256; update the critics towards $r+\gamma(\min_iQ_{\phi_i}(o',a')-\alpha\log\pi_\theta(a'\mid o'))$
+  \State update the actor to maximise $\min_iQ_{\phi_i}(o,a)-\alpha\log\pi_\theta(a\mid o)$; tune $\alpha$
+\EndFor
+\State save $\pi_\theta$
+\end{algorithmic}
+\end{algorithm}
+\begin{algorithm}[H]
+\caption{Learned swing-up: RL $\to$ LQR controller and evaluation (\texttt{acrobot\_env.py}, \texttt{evaluate.py})}
+\label{alg:p5eval}
+\begin{algorithmic}[1]
+\Function{RLController}{$x$}
+  \If{$\tilde x^TS\tilde x<5$} \State \Return $\operatorname{sat}(-K\tilde x)$ \Comment{same upright LQR catch}
+  \EndIf
+  \State every 20 ms: $\tau\gets20\,\pi_\theta(o)$ (deterministic); hold it in between
+  \State \Return $\tau$
+\EndFunction
+\For{link masses $\in\{0.6,\ 0.8,\ 1.0,\ 1.2,\ 1.4\}$ kg} \Comment{controllers always assume 1 kg}
+  \For{each of the 40 random starts, for the energy and both RL controllers}
+    \State simulate 30 s; record held, first catch time, torque saturation, elbow work and hand-overs
+  \EndFor
+\EndFor
+\end{algorithmic}
+\end{algorithm}

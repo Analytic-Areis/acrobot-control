@@ -1,0 +1,1196 @@
+== 0. model check 11:59:36
+pybullet build time: Oct 29 2026 18:12:10
+max difference parametric model vs project model: 8.526512829121202e-14
+== 1. training (1000000 steps) 11:59:36
+pybullet build time: Oct 29 2026 18:12:10
+  10000 steps | episodes   13 | reached catch zone  30.8% |     4 s
+  20000 steps | episodes   17 | reached catch zone  23.5% |    12 s
+  30000 steps | episodes   23 | reached catch zone  65.2% |    20 s
+  40000 steps | episodes   31 | reached catch zone  77.4% |    27 s
+  50000 steps | episodes   43 | reached catch zone  97.7% |    35 s
+  60000 steps | episodes   29 | reached catch zone  75.9% |    42 s
+  70000 steps | episodes   28 | reached catch zone  75.0% |    50 s
+  80000 steps | episodes   30 | reached catch zone  86.7% |    57 s
+  90000 steps | episodes   41 | reached catch zone  87.8% |    65 s
+ 100000 steps | episodes   54 | reached catch zone 100.0% |    72 s
+ 110000 steps | episodes   68 | reached catch zone 100.0% |    80 s
+ 120000 steps | episodes   72 | reached catch zone 100.0% |    87 s
+ 130000 steps | episodes   79 | reached catch zone 100.0% |    95 s
+ 140000 steps | episodes   72 | reached catch zone 100.0% |   102 s
+ 150000 steps | episodes   83 | reached catch zone 100.0% |   110 s
+ 160000 steps | episodes   76 | reached catch zone 100.0% |   117 s
+ 170000 steps | episodes   82 | reached catch zone 100.0% |   125 s
+ 180000 steps | episodes   88 | reached catch zone 100.0% |   132 s
+ 190000 steps | episodes   88 | reached catch zone 100.0% |   140 s
+ 200000 steps | episodes   89 | reached catch zone 100.0% |   147 s
+ 210000 steps | episodes   95 | reached catch zone 100.0% |   155 s
+ 220000 steps | episodes   92 | reached catch zone 100.0% |   162 s
+ 230000 steps | episodes   94 | reached catch zone 100.0% |   170 s
+ 240000 steps | episodes   92 | reached catch zone 100.0% |   177 s
+ 250000 steps | episodes   95 | reached catch zone 100.0% |   185 s
+ 260000 steps | episodes   96 | reached catch zone 100.0% |   192 s
+ 270000 steps | episodes   97 | reached catch zone 100.0% |   200 s
+ 280000 steps | episodes   97 | reached catch zone 100.0% |   207 s
+ 290000 steps | episodes   98 | reached catch zone 100.0% |   215 s
+ 300000 steps | episodes   95 | reached catch zone 100.0% |   222 s
+ 310000 steps | episodes   93 | reached catch zone 100.0% |   230 s
+ 320000 steps | episodes   93 | reached catch zone 100.0% |   237 s
+ 330000 steps | episodes  100 | reached catch zone 100.0% |   245 s
+ 340000 steps | episodes   95 | reached catch zone 100.0% |   252 s
+ 350000 steps | episodes   97 | reached catch zone 100.0% |   260 s
+ 360000 steps | episodes   97 | reached catch zone 100.0% |   267 s
+ 370000 steps | episodes   97 | reached catch zone 100.0% |   275 s
+ 380000 steps | episodes  100 | reached catch zone 100.0% |   282 s
+ 390000 steps | episodes  100 | reached catch zone 100.0% |   290 s
+ 400000 steps | episodes  100 | reached catch zone 100.0% |   297 s
+ 410000 steps | episodes   97 | reached catch zone 100.0% |   305 s
+ 420000 steps | episodes  105 | reached catch zone 100.0% |   312 s
+ 430000 steps | episodes  103 | reached catch zone 100.0% |   320 s
+ 440000 steps | episodes   98 | reached catch zone 100.0% |   327 s
+ 450000 steps | episodes  100 | reached catch zone 100.0% |   335 s
+ 460000 steps | episodes  102 | reached catch zone 100.0% |   342 s
+ 470000 steps | episodes   99 | reached catch zone 100.0% |   349 s
+ 480000 steps | episodes  102 | reached catch zone 100.0% |   357 s
+ 490000 steps | episodes   99 | reached catch zone 100.0% |   364 s
+ 500000 steps | episodes  105 | reached catch zone 100.0% |   372 s
+ 510000 steps | episodes  100 | reached catch zone 100.0% |   380 s
+ 520000 steps | episodes  100 | reached catch zone 100.0% |   387 s
+ 530000 steps | episodes  105 | reached catch zone 100.0% |   394 s
+ 540000 steps | episodes  105 | reached catch zone 100.0% |   402 s
+ 550000 steps | episodes  100 | reached catch zone 100.0% |   409 s
+ 560000 steps | episodes  103 | reached catch zone 100.0% |   417 s
+ 570000 steps | episodes  104 | reached catch zone 100.0% |   424 s
+ 580000 steps | episodes  103 | reached catch zone 100.0% |   432 s
+ 590000 steps | episodes  100 | reached catch zone 100.0% |   439 s
+ 600000 steps | episodes  103 | reached catch zone 100.0% |   447 s
+ 610000 steps | episodes  103 | reached catch zone 100.0% |   454 s
+ 620000 steps | episodes  101 | reached catch zone 100.0% |   462 s
+ 630000 steps | episodes  104 | reached catch zone 100.0% |   469 s
+ 640000 steps | episodes  104 | reached catch zone 100.0% |   477 s
+ 650000 steps | episodes  101 | reached catch zone 100.0% |   484 s
+ 660000 steps | episodes  104 | reached catch zone 100.0% |   492 s
+ 670000 steps | episodes  107 | reached catch zone 100.0% |   500 s
+ 680000 steps | episodes  101 | reached catch zone 100.0% |   507 s
+ 690000 steps | episodes  101 | reached catch zone 100.0% |   515 s
+ 700000 steps | episodes  103 | reached catch zone 100.0% |   522 s
+ 710000 steps | episodes  100 | reached catch zone 100.0% |   530 s
+ 720000 steps | episodes   97 | reached catch zone 100.0% |   537 s
+ 730000 steps | episodes   90 | reached catch zone 100.0% |   545 s
+ 740000 steps | episodes   97 | reached catch zone 100.0% |   552 s
+ 750000 steps | episodes  104 | reached catch zone 100.0% |   560 s
+ 760000 steps | episodes  106 | reached catch zone 100.0% |   567 s
+ 770000 steps | episodes  105 | reached catch zone 100.0% |   575 s
+ 780000 steps | episodes  107 | reached catch zone 100.0% |   582 s
+ 790000 steps | episodes  107 | reached catch zone 100.0% |   590 s
+ 800000 steps | episodes  104 | reached catch zone 100.0% |   597 s
+ 810000 steps | episodes  105 | reached catch zone 100.0% |   605 s
+ 820000 steps | episodes  102 | reached catch zone 100.0% |   612 s
+ 830000 steps | episodes  103 | reached catch zone 100.0% |   620 s
+ 840000 steps | episodes  105 | reached catch zone 100.0% |   627 s
+ 850000 steps | episodes  108 | reached catch zone 100.0% |   635 s
+ 860000 steps | episodes  105 | reached catch zone 100.0% |   642 s
+ 870000 steps | episodes  102 | reached catch zone 100.0% |   650 s
+ 880000 steps | episodes  106 | reached catch zone 100.0% |   657 s
+ 890000 steps | episodes  105 | reached catch zone 100.0% |   665 s
+ 900000 steps | episodes  105 | reached catch zone 100.0% |   672 s
+ 910000 steps | episodes  102 | reached catch zone 100.0% |   680 s
+ 920000 steps | episodes  108 | reached catch zone 100.0% |   687 s
+ 930000 steps | episodes  105 | reached catch zone 100.0% |   695 s
+ 940000 steps | episodes  106 | reached catch zone 100.0% |   702 s
+ 950000 steps | episodes  101 | reached catch zone 100.0% |   710 s
+ 960000 steps | episodes  103 | reached catch zone 100.0% |   717 s
+ 970000 steps | episodes  106 | reached catch zone 100.0% |   725 s
+ 980000 steps | episodes  103 | reached catch zone 100.0% |   732 s
+ 990000 steps | episodes  108 | reached catch zone 100.0% |   739 s
+1000000 steps | episodes  110 | reached catch zone 100.0% |   747 s
+saved policies/sac_swingup.zip
+== 2. evaluation 12:12:05
+pybullet build time: Oct 29 2026 18:12:10
+energy                       masses (1.0, 1.0): {'held': 35, 'of': 40, 'median_catch_s': 3.98, 'saturated_pct': 8.8, 'median_work_J': 244.9}  (31 s)
+rl                           masses (1.0, 1.0): {'held': 40, 'of': 40, 'median_catch_s': 1.71, 'saturated_pct': 0.1, 'median_work_J': 144.5}  (62 s)
+energy                       masses (0.8, 0.8): {'held': 37, 'of': 40, 'median_catch_s': 4.77, 'saturated_pct': 8.3, 'median_work_J': 164.4}  (93 s)
+rl                           masses (0.8, 0.8): {'held': 38, 'of': 40, 'median_catch_s': 1.75, 'saturated_pct': 0.0, 'median_work_J': 128.3}  (123 s)
+energy                       masses (1.2, 1.2): {'held': 35, 'of': 40, 'median_catch_s': 5.37, 'saturated_pct': 12.6, 'median_work_J': 334.0}  (155 s)
+rl                           masses (1.2, 1.2): {'held': 15, 'of': 40, 'median_catch_s': 1.77, 'saturated_pct': 0.1, 'median_work_J': 151.3}  (187 s)
+pybullet {'energy': {'t_catch': 2.17, 'held': True, 'end_dev': [0.0, -0.001]}, 'rl': {'t_catch': 1.76, 'held': True, 'end_dev': [-0.0, 0.001]}}
+{
+ "nominal": {
+  "energy": {
+   "held": 35,
+   "of": 40,
+   "median_catch_s": 3.98,
+   "saturated_pct": 8.8,
+   "median_work_J": 244.9
+  },
+  "rl": {
+   "held": 40,
+   "of": 40,
+   "median_catch_s": 1.71,
+   "saturated_pct": 0.1,
+   "median_work_J": 144.5
+  }
+ },
+ "mass_minus20": {
+  "energy": {
+   "held": 37,
+   "of": 40,
+   "median_catch_s": 4.77,
+   "saturated_pct": 8.3,
+   "median_work_J": 164.4
+  },
+  "rl": {
+   "held": 38,
+   "of": 40,
+   "median_catch_s": 1.75,
+   "saturated_pct": 0.0,
+   "median_work_J": 128.3
+  }
+ },
+ "mass_plus20": {
+  "energy": {
+   "held": 35,
+   "of": 40,
+   "median_catch_s": 5.37,
+   "saturated_pct": 12.6,
+   "median_work_J": 334.0
+  },
+  "rl": {
+   "held": 15,
+   "of": 40,
+   "median_catch_s": 1.77,
+   "saturated_pct": 0.1,
+   "median_work_J": 151.3
+  }
+ },
+ "pybullet": {
+  "energy": {
+   "t_catch": 2.17,
+   "held": true,
+   "end_dev": [
+    0.0,
+    -0.001
+   ]
+  },
+  "rl": {
+   "t_catch": 1.76,
+   "held": true,
+   "end_dev": [
+    -0.0,
+    0.001
+   ]
+  }
+ }
+}
+done in 188 s
+== 3. video preview 12:15:16
+Manim Community v0.22.0
+
+[11/11/26 12:15:18] INFO     Caching disabled.              cairo_renderer.py:89
+Animation 0: FadeIn(VGroup of 3 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                    [11/11/26 12:15:19] INFO     Animation 0 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00000.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 1 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00001.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 2: FadeOut(VGroup of 3 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                         INFO     Animation 2 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00002.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 3: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                        INFO     Animation 3 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00003.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 4: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                              INFO     Animation 4 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00004.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 5: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                              INFO     Animation 5 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00005.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 6: GrowArrow(Arrow):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                         INFO     Animation 6 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00006.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 7: FadeIn(Text('start hanging, end balanced upright')):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                           INFO     Animation 7 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00007.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 8: FadeIn(Text('only the elbow has a motor, at most 20 N·m')):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                                  INFO     Animation 8 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00008.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 9: FadeIn(Text('energy needed: −24.5 J  →  +24.5 J')):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                          INFO     Animation 9 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00009.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 10: FadeIn(Line):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                     INFO     Animation 10 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00010.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 11: FadeIn(Text('both methods: swing up, then hand over to the')):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                                      INFO     Animation 11 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00011.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 12: FadeIn(Text('same Phase 3 LQR once inside its catch zone')):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                [11/11/26 12:15:20] INFO     Animation 12 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00012.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 13: FadeIn(Text('→ the only difference is WHO does the swing-up')):   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                                       INFO     Animation 13 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00013.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 14 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00014.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 15: FadeOut(Mobject), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 15: FadeOut(Mobject), etc.:  67%|██████▋   | 10/15 [00:00<00:00, 95.55it/s]                                                                                                         INFO     Animation 15 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00015.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 16: FadeIn(VGroup of 1 submobject):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                        INFO     Animation 16 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00016.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 17: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  87%|████████▋ | 13/15 [00:00<00:00, 125.42it/s]                                                                                               [11/11/26 12:15:21] INFO     Animation 17 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00017.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 18 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00018.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 19: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  73%|███████▎  | 11/15 [00:00<00:00, 109.50it/s]                                                                                                                   INFO     Animation 19 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00019.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 20 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00020.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 21: FadeOut(VGroup of 1 submobject), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  40%|████      | 6/15 [00:00<00:00, 53.34it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  80%|████████  | 12/15 [00:00<00:00, 53.86it/s]                                                                                                    [11/11/26 12:15:22] INFO     Animation 21 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00021.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 22: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                         INFO     Animation 22 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00022.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 23: LaggedStart(Group), etc.:   0%|          | 0/21 [00:00<?, ?it/s]                                                                                                  INFO     Animation 23 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00023.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 24: LaggedStart(Group), etc.:   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                  INFO     Animation 24 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00024.mp4'                                    
+[11/11/26 12:15:23] INFO     Caching disabled.              cairo_renderer.py:89
+Animation 25: FadeIn(VGroup of 8 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  67%|██████▋   | 10/15 [00:00<00:00, 93.21it/s]                                                                                                                  INFO     Animation 25 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00025.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 26 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00026.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 27: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  40%|████      | 6/15 [00:00<00:00, 55.30it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  80%|████████  | 12/15 [00:00<00:00, 55.08it/s]                                                                                                     [11/11/26 12:15:24] INFO     Animation 27 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00027.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 28: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                         INFO     Animation 28 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00028.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 29: Create(Axes of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                             INFO     Animation 29 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00029.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 30: Create(VMobject):   0%|          | 0/45 [00:00<?, ?it/s]                                                                                          INFO     Animation 30 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00030.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 31 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00031.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 32: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                                INFO     Animation 32 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00032.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 33: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                     [11/11/26 12:15:25] INFO     Animation 33 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00033.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 34: FadeIn(Text('Energy swing-up')), etc.:   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                              INFO     Animation 34 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00034.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 35: FadeIn(Rectangle), etc.:   0%|          | 0/5 [00:00<?, ?it/s]                                                                                                INFO     Animation 35 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00035.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 36: FadeIn(Text('RL swing-up (SAC)')), etc.:   0%|          | 0/6 [00:00<?, ?it/s]                                                                                                                INFO     Animation 36 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00036.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 37: FadeIn(Rectangle), etc.:   0%|          | 0/5 [00:00<?, ?it/s]                                                                                                INFO     Animation 37 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00037.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 38: _MethodAnimation(ValueTracker):   0%|          | 0/180 [00:00<?, ?it/s]Animation 38: _MethodAnimation(ValueTracker):   1%|          | 2/180 [00:00<00:09, 19.25it/s]Animation 38: _MethodAnimation(ValueTracker):   2%|▏         | 4/180 [00:00<00:09, 17.90it/s]Animation 38: _MethodAnimation(ValueTracker):   3%|▎         | 6/180 [00:00<00:10, 16.92it/s]Animation 38: _MethodAnimation(ValueTracker):   4%|▍         | 8/180 [00:00<00:10, 16.61it/s]Animation 38: _MethodAnimation(ValueTracker):   6%|▌         | 10/180 [00:00<00:10, 16.49it/s]Animation 38: _MethodAnimation(ValueTracker):   7%|▋         | 12/180 [00:00<00:10, 16.40it/s]Animation 38: _MethodAnimation(ValueTracker):   8%|▊         | 14/180 [00:00<00:10, 16.23it/s]Animation 38: _MethodAnimation(ValueTracker):   9%|▉         | 16/180 [00:00<00:10, 16.19it/s]Animation 38: _MethodAnimation(ValueTracker):  10%|█         | 18/180 [00:01<00:09, 16.21it/s]Animation 38: _MethodAnimation(ValueTracker):  11%|█         | 20/180 [00:01<00:09, 16.17it/s]Animation 38: _MethodAnimation(ValueTracker):  12%|█▏        | 22/180 [00:01<00:09, 16.16it/s]Animation 38: _MethodAnimation(ValueTracker):  13%|█▎        | 24/180 [00:01<00:09, 15.81it/s]Animation 38: _MethodAnimation(ValueTracker):  14%|█▍        | 26/180 [00:01<00:09, 16.01it/s]Animation 38: _MethodAnimation(ValueTracker):  16%|█▌        | 28/180 [00:01<00:09, 16.06it/s]Animation 38: _MethodAnimation(ValueTracker):  17%|█▋        | 30/180 [00:01<00:09, 16.00it/s]Animation 38: _MethodAnimation(ValueTracker):  18%|█▊        | 32/180 [00:01<00:09, 15.84it/s]Animation 38: _MethodAnimation(ValueTracker):  19%|█▉        | 34/180 [00:02<00:09, 15.25it/s]Animation 38: _MethodAnimation(ValueTracker):  20%|██        | 36/180 [00:02<00:09, 14.70it/s]Animation 38: _MethodAnimation(ValueTracker):  21%|██        | 38/180 [00:02<00:09, 14.32it/s]Animation 38: _MethodAnimation(ValueTracker):  22%|██▏       | 40/180 [00:02<00:09, 14.02it/s]Animation 38: _MethodAnimation(ValueTracker):  23%|██▎       | 42/180 [00:02<00:09, 13.88it/s]Animation 38: _MethodAnimation(ValueTracker):  24%|██▍       | 44/180 [00:02<00:09, 13.66it/s]Animation 38: _MethodAnimation(ValueTracker):  26%|██▌       | 46/180 [00:03<00:09, 13.54it/s]Animation 38: _MethodAnimation(ValueTracker):  27%|██▋       | 48/180 [00:03<00:09, 13.25it/s]Animation 38: _MethodAnimation(ValueTracker):  28%|██▊       | 50/180 [00:03<00:09, 13.22it/s]Animation 38: _MethodAnimation(ValueTracker):  29%|██▉       | 52/180 [00:03<00:09, 13.31it/s]Animation 38: _MethodAnimation(ValueTracker):  30%|███       | 54/180 [00:03<00:09, 13.30it/s]Animation 38: _MethodAnimation(ValueTracker):  31%|███       | 56/180 [00:03<00:09, 13.30it/s]Animation 38: _MethodAnimation(ValueTracker):  32%|███▏      | 58/180 [00:03<00:09, 13.31it/s]Animation 38: _MethodAnimation(ValueTracker):  33%|███▎      | 60/180 [00:04<00:09, 13.27it/s]Animation 38: _MethodAnimation(ValueTracker):  34%|███▍      | 62/180 [00:04<00:08, 13.33it/s]Animation 38: _MethodAnimation(ValueTracker):  36%|███▌      | 64/180 [00:04<00:08, 13.32it/s]Animation 38: _MethodAnimation(ValueTracker):  37%|███▋      | 66/180 [00:04<00:08, 13.36it/s]Animation 38: _MethodAnimation(ValueTracker):  38%|███▊      | 68/180 [00:04<00:08, 13.43it/s]Animation 38: _MethodAnimation(ValueTracker):  39%|███▉      | 70/180 [00:04<00:08, 13.43it/s]Animation 38: _MethodAnimation(ValueTracker):  40%|████      | 72/180 [00:04<00:08, 13.48it/s]Animation 38: _MethodAnimation(ValueTracker):  41%|████      | 74/180 [00:05<00:07, 13.43it/s]Animation 38: _MethodAnimation(ValueTracker):  42%|████▏     | 76/180 [00:05<00:07, 13.17it/s]Animation 38: _MethodAnimation(ValueTracker):  43%|████▎     | 78/180 [00:05<00:07, 13.24it/s]Animation 38: _MethodAnimation(ValueTracker):  44%|████▍     | 80/180 [00:05<00:07, 13.29it/s]Animation 38: _MethodAnimation(ValueTracker):  46%|████▌     | 82/180 [00:05<00:07, 13.28it/s]Animation 38: _MethodAnimation(ValueTracker):  47%|████▋     | 84/180 [00:05<00:07, 13.32it/s]Animation 38: _MethodAnimation(ValueTracker):  48%|████▊     | 86/180 [00:06<00:07, 13.36it/s]Animation 38: _MethodAnimation(ValueTracker):  49%|████▉     | 88/180 [00:06<00:06, 13.40it/s]Animation 38: _MethodAnimation(ValueTracker):  50%|█████     | 90/180 [00:06<00:06, 13.33it/s]Animation 38: _MethodAnimation(ValueTracker):  51%|█████     | 92/180 [00:06<00:06, 13.30it/s]Animation 38: _MethodAnimation(ValueTracker):  52%|█████▏    | 94/180 [00:06<00:06, 13.29it/s]Animation 38: _MethodAnimation(ValueTracker):  53%|█████▎    | 96/180 [00:06<00:06, 13.31it/s]Animation 38: _MethodAnimation(ValueTracker):  54%|█████▍    | 98/180 [00:06<00:06, 13.30it/s]Animation 38: _MethodAnimation(ValueTracker):  56%|█████▌    | 100/180 [00:07<00:06, 13.32it/s]Animation 38: _MethodAnimation(ValueTracker):  57%|█████▋    | 102/180 [00:07<00:05, 13.21it/s]Animation 38: _MethodAnimation(ValueTracker):  58%|█████▊    | 104/180 [00:07<00:05, 13.26it/s]Animation 38: _MethodAnimation(ValueTracker):  59%|█████▉    | 106/180 [00:07<00:05, 13.31it/s]Animation 38: _MethodAnimation(ValueTracker):  60%|██████    | 108/180 [00:07<00:05, 13.41it/s]Animation 38: _MethodAnimation(ValueTracker):  61%|██████    | 110/180 [00:07<00:05, 13.43it/s]Animation 38: _MethodAnimation(ValueTracker):  62%|██████▏   | 112/180 [00:07<00:05, 13.50it/s]Animation 38: _MethodAnimation(ValueTracker):  63%|██████▎   | 114/180 [00:08<00:04, 13.47it/s]Animation 38: _MethodAnimation(ValueTracker):  64%|██████▍   | 116/180 [00:08<00:04, 13.54it/s]Animation 38: _MethodAnimation(ValueTracker):  66%|██████▌   | 118/180 [00:08<00:04, 13.53it/s]Animation 38: _MethodAnimation(ValueTracker):  67%|██████▋   | 120/180 [00:08<00:04, 13.42it/s]Animation 38: _MethodAnimation(ValueTracker):  68%|██████▊   | 122/180 [00:08<00:04, 13.32it/s]Animation 38: _MethodAnimation(ValueTracker):  69%|██████▉   | 124/180 [00:08<00:04, 13.24it/s]Animation 38: _MethodAnimation(ValueTracker):  70%|███████   | 126/180 [00:09<00:04, 13.18it/s]Animation 38: _MethodAnimation(ValueTracker):  71%|███████   | 128/180 [00:09<00:03, 13.12it/s]Animation 38: _MethodAnimation(ValueTracker):  72%|███████▏  | 130/180 [00:09<00:03, 12.98it/s]Animation 38: _MethodAnimation(ValueTracker):  73%|███████▎  | 132/180 [00:09<00:03, 13.08it/s]Animation 38: _MethodAnimation(ValueTracker):  74%|███████▍  | 134/180 [00:09<00:03, 13.09it/s]Animation 38: _MethodAnimation(ValueTracker):  76%|███████▌  | 136/180 [00:09<00:03, 13.15it/s]Animation 38: _MethodAnimation(ValueTracker):  77%|███████▋  | 138/180 [00:09<00:03, 13.22it/s]Animation 38: _MethodAnimation(ValueTracker):  78%|███████▊  | 140/180 [00:10<00:03, 13.27it/s]Animation 38: _MethodAnimation(ValueTracker):  79%|███████▉  | 142/180 [00:10<00:02, 13.36it/s]Animation 38: _MethodAnimation(ValueTracker):  80%|████████  | 144/180 [00:10<00:02, 13.37it/s]Animation 38: _MethodAnimation(ValueTracker):  81%|████████  | 146/180 [00:10<00:02, 13.30it/s]Animation 38: _MethodAnimation(ValueTracker):  82%|████████▏ | 148/180 [00:10<00:02, 13.31it/s]Animation 38: _MethodAnimation(ValueTracker):  83%|████████▎ | 150/180 [00:10<00:02, 13.29it/s]Animation 38: _MethodAnimation(ValueTracker):  84%|████████▍ | 152/180 [00:10<00:02, 13.35it/s]Animation 38: _MethodAnimation(ValueTracker):  86%|████████▌ | 154/180 [00:11<00:01, 13.28it/s]Animation 38: _MethodAnimation(ValueTracker):  87%|████████▋ | 156/180 [00:11<00:01, 13.03it/s]Animation 38: _MethodAnimation(ValueTracker):  88%|████████▊ | 158/180 [00:11<00:01, 12.78it/s]Animation 38: _MethodAnimation(ValueTracker):  89%|████████▉ | 160/180 [00:11<00:01, 12.85it/s]Animation 38: _MethodAnimation(ValueTracker):  90%|█████████ | 162/180 [00:11<00:01, 12.98it/s]Animation 38: _MethodAnimation(ValueTracker):  91%|█████████ | 164/180 [00:11<00:01, 12.97it/s]Animation 38: _MethodAnimation(ValueTracker):  92%|█████████▏| 166/180 [00:12<00:01, 13.02it/s]Animation 38: _MethodAnimation(ValueTracker):  93%|█████████▎| 168/180 [00:12<00:00, 13.11it/s]Animation 38: _MethodAnimation(ValueTracker):  94%|█████████▍| 170/180 [00:12<00:00, 13.17it/s]Animation 38: _MethodAnimation(ValueTracker):  96%|█████████▌| 172/180 [00:12<00:00, 13.23it/s]Animation 38: _MethodAnimation(ValueTracker):  97%|█████████▋| 174/180 [00:12<00:00, 13.25it/s]Animation 38: _MethodAnimation(ValueTracker):  98%|█████████▊| 176/180 [00:12<00:00, 13.21it/s]Animation 38: _MethodAnimation(ValueTracker):  99%|█████████▉| 178/180 [00:12<00:00, 13.24it/s]Animation 38: _MethodAnimation(ValueTracker): 100%|██████████| 180/180 [00:13<00:00, 13.21it/s]                                                                                               [11/11/26 12:15:38] INFO     Animation 38 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00038.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  13%|█▎        | 2/15 [00:00<00:01, 12.75it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  27%|██▋       | 4/15 [00:00<00:00, 13.05it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  40%|████      | 6/15 [00:00<00:00, 13.16it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  53%|█████▎    | 8/15 [00:00<00:00, 13.21it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  67%|██████▋   | 10/15 [00:00<00:00, 13.35it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  80%|████████  | 12/15 [00:00<00:00, 13.39it/s]Animation 39: FadeIn(Text('caught at 2.2 s')), etc.:  93%|█████████▎| 14/15 [00:01<00:00, 13.41it/s]                                                                                                    [11/11/26 12:15:39] INFO     Animation 39 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00039.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 40 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00040.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 41: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:   7%|▋         | 1/15 [00:00<00:03,  4.29it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  13%|█▎        | 2/15 [00:00<00:02,  4.40it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  20%|██        | 3/15 [00:00<00:02,  4.42it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  27%|██▋       | 4/15 [00:00<00:02,  4.41it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  33%|███▎      | 5/15 [00:01<00:02,  4.35it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  40%|████      | 6/15 [00:01<00:02,  4.41it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  47%|████▋     | 7/15 [00:01<00:01,  4.45it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  53%|█████▎    | 8/15 [00:01<00:01,  4.45it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  60%|██████    | 9/15 [00:02<00:01,  4.46it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  67%|██████▋   | 10/15 [00:02<00:01,  4.47it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  73%|███████▎  | 11/15 [00:02<00:00,  4.46it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  80%|████████  | 12/15 [00:02<00:00,  4.39it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  87%|████████▋ | 13/15 [00:02<00:00,  4.39it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.:  93%|█████████▎| 14/15 [00:03<00:00,  4.42it/s]Animation 41: FadeOut(VGroup of 2 submobjects), etc.: 100%|██████████| 15/15 [00:03<00:00,  4.43it/s]                                                                                                     [11/11/26 12:15:43] INFO     Animation 41 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00041.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 42: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                         INFO     Animation 42 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00042.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 43: FadeIn(VGroup of 3 submobjects):   0%|          | 0/7 [00:00<?, ?it/s]                                                                                                        INFO     Animation 43 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00043.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 44: FadeIn(VGroup of 3 submobjects):   0%|          | 0/7 [00:00<?, ?it/s]                                                                                                        INFO     Animation 44 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00044.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 45: FadeIn(VGroup of 3 submobjects):   0%|          | 0/7 [00:00<?, ?it/s]                                                                                                        INFO     Animation 45 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00045.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 46: FadeIn(VGroup of 3 submobjects):   0%|          | 0/7 [00:00<?, ?it/s]                                                                                                        INFO     Animation 46 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00046.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 47: FadeIn(VGroup of 3 submobjects):   0%|          | 0/7 [00:00<?, ?it/s]                                                                                                        INFO     Animation 47 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00047.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 48: FadeIn(Text('RL catches more starts here, with no physics written into the controller')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                                                                                  INFO     Animation 48 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00048.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+[11/11/26 12:15:44] INFO     Animation 49 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00049.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 50: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 50: FadeOut(VGroup of 2 submobjects), etc.:  73%|███████▎  | 11/15 [00:00<00:00, 102.03it/s]                                                                                                                          INFO     Animation 50 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00050.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 51: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                         INFO     Animation 51 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00051.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 52: Create(Line):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                      INFO     Animation 52 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00052.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 53: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/38 [00:00<?, ?it/s]                                                                                                               INFO     Animation 53 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00053.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 54: FadeIn(Text('held from 40 random starts')):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                                    INFO     Animation 54 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00054.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 55 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00055.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 56: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]                                                                                            [11/11/26 12:15:45] INFO     Animation 56 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00056.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 57: FadeIn(VGroup of 1 submobject):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                                        INFO     Animation 57 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00057.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 58: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/15 [00:00<?, ?it/s]Animation 58: FadeIn(VGroup of 2 submobjects), etc.:  73%|███████▎  | 11/15 [00:00<00:00, 106.69it/s]                                                                                                                         INFO     Animation 58 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00058.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 59: FadeIn(VGroup of 2 submobjects):   0%|          | 0/15 [00:00<?, ?it/s]                                                                                     [11/11/26 12:15:46] INFO     Animation 59 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00059.mp4'                                    
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 60 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/partial_m                         
+                             ovie_files/RLvsEnergy/unca                         
+                             ched_00060.mp4'                                    
+                    INFO     Combining to Movie file.   scene_file_writer.py:877
+                    INFO                                scene_file_writer.py:999
+                             File ready at                                      
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/480p15/RLvsEnerg                         
+                             y.mp4'                                             
+                                                                                
+                    INFO     Rendered RLvsEnergy                  manager.py:226
+                             Played 61 animations                               
+== 4. video 2K 12:15:46
+Manim Community v0.22.0
+
+[11/11/26 12:15:47] INFO     Caching disabled.              cairo_renderer.py:89
+Animation 0: FadeIn(VGroup of 3 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 0: FadeIn(VGroup of 3 submobjects):  20%|██        | 12/60 [00:00<00:00, 112.43it/s]Animation 0: FadeIn(VGroup of 3 submobjects):  40%|████      | 24/60 [00:00<00:00, 110.05it/s]Animation 0: FadeIn(VGroup of 3 submobjects):  60%|██████    | 36/60 [00:00<00:00, 109.54it/s]Animation 0: FadeIn(VGroup of 3 submobjects):  80%|████████  | 48/60 [00:00<00:00, 110.64it/s]Animation 0: FadeIn(VGroup of 3 submobjects): 100%|██████████| 60/60 [00:00<00:00, 105.66it/s]                                                                                              [11/11/26 12:15:48] INFO     Animation 0 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00000.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 1 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00001.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 2: FadeOut(VGroup of 3 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 2: FadeOut(VGroup of 3 submobjects):  22%|██▏       | 13/60 [00:00<00:00, 125.50it/s]Animation 2: FadeOut(VGroup of 3 submobjects):  43%|████▎     | 26/60 [00:00<00:00, 125.39it/s]Animation 2: FadeOut(VGroup of 3 submobjects):  65%|██████▌   | 39/60 [00:00<00:00, 123.52it/s]Animation 2: FadeOut(VGroup of 3 submobjects):  87%|████████▋ | 52/60 [00:00<00:00, 116.53it/s]                                                                                               [11/11/26 12:15:49] INFO     Animation 2 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00002.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 3: FadeIn(VGroup of 2 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 3: FadeIn(VGroup of 2 submobjects):  53%|█████▎    | 32/60 [00:00<00:00, 317.88it/s]                                                                                                                  INFO     Animation 3 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00003.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 4: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 4: FadeIn(VGroup of 2 submobjects), etc.:  70%|███████   | 42/60 [00:00<00:00, 417.80it/s]                                                                                                    [11/11/26 12:15:50] INFO     Animation 4 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00004.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 5: FadeIn(VGroup of 2 submobjects), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 5: FadeIn(VGroup of 2 submobjects), etc.:  73%|███████▎  | 44/60 [00:00<00:00, 435.39it/s]                                                                                                                        INFO     Animation 5 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00005.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 6: GrowArrow(Arrow):   0%|          | 0/60 [00:00<?, ?it/s]Animation 6: GrowArrow(Arrow):  75%|███████▌  | 45/60 [00:00<00:00, 444.92it/s]                                                                                                   INFO     Animation 6 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00006.mp4'                                   
+[11/11/26 12:15:51] INFO     Caching disabled.              cairo_renderer.py:89
+Animation 7: FadeIn(Text('start hanging, end balanced upright')):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                                            INFO     Animation 7 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00007.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 8: FadeIn(Text('only the elbow has a motor, at most 20 N·m')):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                                                   INFO     Animation 8 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00008.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 9: FadeIn(Text('energy needed: −24.5 J  →  +24.5 J')):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                                           INFO     Animation 9 : Partial      scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00009.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 10: FadeIn(Line):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                      INFO     Animation 10 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00010.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 11: FadeIn(Text('both methods: swing up, then hand over to the')):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                                                       INFO     Animation 11 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00011.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 12: FadeIn(Text('same Phase 3 LQR once inside its catch zone')):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                                 [11/11/26 12:15:52] INFO     Animation 12 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00012.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 13: FadeIn(Text('→ the only difference is WHO does the swing-up')):   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                                                        INFO     Animation 13 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00013.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+[11/11/26 12:15:53] INFO     Animation 14 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00014.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 15: FadeOut(Mobject), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 15: FadeOut(Mobject), etc.:  13%|█▎        | 8/60 [00:00<00:00, 71.19it/s]Animation 15: FadeOut(Mobject), etc.:  27%|██▋       | 16/60 [00:00<00:00, 70.45it/s]Animation 15: FadeOut(Mobject), etc.:  40%|████      | 24/60 [00:00<00:00, 70.59it/s]Animation 15: FadeOut(Mobject), etc.:  53%|█████▎    | 32/60 [00:00<00:00, 70.39it/s]Animation 15: FadeOut(Mobject), etc.:  67%|██████▋   | 40/60 [00:00<00:00, 70.09it/s]Animation 15: FadeOut(Mobject), etc.:  80%|████████  | 48/60 [00:00<00:00, 68.89it/s]Animation 15: FadeOut(Mobject), etc.:  92%|█████████▏| 55/60 [00:00<00:00, 67.96it/s]                                                                                     [11/11/26 12:15:54] INFO     Animation 15 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00015.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 16: FadeIn(VGroup of 1 submobject):   0%|          | 0/60 [00:00<?, ?it/s]Animation 16: FadeIn(VGroup of 1 submobject):  50%|█████     | 30/60 [00:00<00:00, 298.24it/s]Animation 16: FadeIn(VGroup of 1 submobject): 100%|██████████| 60/60 [00:00<00:00, 233.52it/s]                                                                                                                  INFO     Animation 16 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00016.mp4'                                   
+[11/11/26 12:15:55] INFO     Caching disabled.              cairo_renderer.py:89
+Animation 17: FadeIn(VGroup of 2 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  17%|█▋        | 10/60 [00:00<00:00, 94.05it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  33%|███▎      | 20/60 [00:00<00:00, 89.33it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  48%|████▊     | 29/60 [00:00<00:00, 88.17it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  63%|██████▎   | 38/60 [00:00<00:00, 88.15it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  78%|███████▊  | 47/60 [00:00<00:00, 86.57it/s]Animation 17: FadeIn(VGroup of 2 submobjects):  93%|█████████▎| 56/60 [00:00<00:00, 82.63it/s]                                                                                              [11/11/26 12:15:56] INFO     Animation 17 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00017.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+                    INFO     Animation 18 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00018.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 19: FadeIn(VGroup of 2 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  15%|█▌        | 9/60 [00:00<00:00, 84.86it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  30%|███       | 18/60 [00:00<00:00, 80.33it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  45%|████▌     | 27/60 [00:00<00:00, 78.71it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  58%|█████▊    | 35/60 [00:00<00:00, 78.36it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  72%|███████▏  | 43/60 [00:00<00:00, 77.44it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  85%|████████▌ | 51/60 [00:00<00:00, 74.57it/s]Animation 19: FadeIn(VGroup of 2 submobjects):  98%|█████████▊| 59/60 [00:00<00:00, 74.09it/s]                                                                                              [11/11/26 12:15:57] INFO     Animation 19 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00019.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+[11/11/26 12:15:59] INFO     Animation 20 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00020.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 21: FadeOut(VGroup of 1 submobject), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:   8%|▊         | 5/60 [00:00<00:01, 42.76it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  17%|█▋        | 10/60 [00:00<00:01, 42.03it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  25%|██▌       | 15/60 [00:00<00:01, 41.67it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  33%|███▎      | 20/60 [00:00<00:00, 41.54it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  42%|████▏     | 25/60 [00:00<00:00, 41.49it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  50%|█████     | 30/60 [00:00<00:00, 41.54it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  58%|█████▊    | 35/60 [00:00<00:00, 41.55it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  67%|██████▋   | 40/60 [00:00<00:00, 41.63it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  75%|███████▌  | 45/60 [00:01<00:00, 41.32it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  83%|████████▎ | 50/60 [00:01<00:00, 41.28it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.:  92%|█████████▏| 55/60 [00:01<00:00, 41.31it/s]Animation 21: FadeOut(VGroup of 1 submobject), etc.: 100%|██████████| 60/60 [00:01<00:00, 42.38it/s]                                                                                                    [11/11/26 12:16:01] INFO     Animation 21 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00021.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 22: FadeIn(VGroup of 2 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 22: FadeIn(VGroup of 2 submobjects):  32%|███▏      | 19/60 [00:00<00:00, 179.73it/s]Animation 22: FadeIn(VGroup of 2 submobjects):  62%|██████▏   | 37/60 [00:00<00:00, 175.37it/s]Animation 22: FadeIn(VGroup of 2 submobjects):  92%|█████████▏| 55/60 [00:00<00:00, 165.82it/s]                                                                                                                   INFO     Animation 22 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00022.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 23: LaggedStart(Group), etc.:   0%|          | 0/84 [00:00<?, ?it/s]Animation 23: LaggedStart(Group), etc.:  26%|██▌       | 22/84 [00:00<00:00, 215.53it/s]Animation 23: LaggedStart(Group), etc.:  52%|█████▏    | 44/84 [00:00<00:00, 212.17it/s]Animation 23: LaggedStart(Group), etc.:  79%|███████▊  | 66/84 [00:00<00:00, 191.45it/s]                                                                                        [11/11/26 12:16:02] INFO     Animation 23 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00023.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 24: LaggedStart(Group), etc.:   0%|          | 0/96 [00:00<?, ?it/s]Animation 24: LaggedStart(Group), etc.:  27%|██▋       | 26/96 [00:00<00:00, 254.59it/s]Animation 24: LaggedStart(Group), etc.:  54%|█████▍    | 52/96 [00:00<00:00, 250.72it/s]Animation 24: LaggedStart(Group), etc.:  81%|████████▏ | 78/96 [00:00<00:00, 206.79it/s]                                                                                        [11/11/26 12:16:03] INFO     Animation 24 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00024.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 25: FadeIn(VGroup of 8 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  13%|█▎        | 8/60 [00:00<00:00, 74.75it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  27%|██▋       | 16/60 [00:00<00:00, 71.09it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  40%|████      | 24/60 [00:00<00:00, 70.02it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  53%|█████▎    | 32/60 [00:00<00:00, 69.42it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  65%|██████▌   | 39/60 [00:00<00:00, 69.07it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  77%|███████▋  | 46/60 [00:00<00:00, 67.32it/s]Animation 25: FadeIn(VGroup of 8 submobjects):  88%|████████▊ | 53/60 [00:00<00:00, 65.97it/s]Animation 25: FadeIn(VGroup of 8 submobjects): 100%|██████████| 60/60 [00:00<00:00, 65.31it/s]                                                                                              [11/11/26 12:16:04] INFO     Animation 25 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00025.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+[11/11/26 12:16:05] INFO     Animation 26 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00026.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 27: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:   8%|▊         | 5/60 [00:00<00:01, 43.35it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  17%|█▋        | 10/60 [00:00<00:01, 42.73it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  25%|██▌       | 15/60 [00:00<00:01, 41.89it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  33%|███▎      | 20/60 [00:00<00:00, 41.93it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  42%|████▏     | 25/60 [00:00<00:00, 42.17it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  50%|█████     | 30/60 [00:00<00:00, 42.30it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  58%|█████▊    | 35/60 [00:00<00:00, 42.31it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  67%|██████▋   | 40/60 [00:00<00:00, 42.37it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  75%|███████▌  | 45/60 [00:01<00:00, 41.74it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  83%|████████▎ | 50/60 [00:01<00:00, 41.43it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.:  92%|█████████▏| 55/60 [00:01<00:00, 41.53it/s]Animation 27: FadeOut(VGroup of 2 submobjects), etc.: 100%|██████████| 60/60 [00:01<00:00, 42.60it/s]                                                                                                     [11/11/26 12:16:07] INFO     Animation 27 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00027.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 28: FadeIn(VGroup of 2 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 28: FadeIn(VGroup of 2 submobjects):  37%|███▋      | 22/60 [00:00<00:00, 212.25it/s]Animation 28: FadeIn(VGroup of 2 submobjects):  73%|███████▎  | 44/60 [00:00<00:00, 208.61it/s]                                                                                               [11/11/26 12:16:08] INFO     Animation 28 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00028.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 29: Create(Axes of 2 submobjects), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 29: Create(Axes of 2 submobjects), etc.:  52%|█████▏    | 31/60 [00:00<00:00, 305.48it/s]                                                                                                                       INFO     Animation 29 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00029.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 30: Create(VMobject):   0%|          | 0/180 [00:00<?, ?it/s]Animation 30: Create(VMobject):  24%|██▍       | 43/180 [00:00<00:00, 423.24it/s]Animation 30: Create(VMobject):  48%|████▊     | 86/180 [00:00<00:00, 237.99it/s]Animation 30: Create(VMobject):  64%|██████▍   | 115/180 [00:00<00:00, 222.71it/s]Animation 30: Create(VMobject):  78%|███████▊  | 140/180 [00:00<00:00, 213.49it/s]Animation 30: Create(VMobject):  91%|█████████ | 163/180 [00:00<00:00, 211.73it/s]                                                                                  [11/11/26 12:16:09] INFO     Animation 30 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00030.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+[11/11/26 12:16:10] INFO     Animation 31 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00031.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 32: FadeOut(VGroup of 2 submobjects), etc.:   0%|          | 0/60 [00:00<?, ?it/s]Animation 32: FadeOut(VGroup of 2 submobjects), etc.:  25%|██▌       | 15/60 [00:00<00:00, 149.05it/s]Animation 32: FadeOut(VGroup of 2 submobjects), etc.:  52%|█████▏    | 31/60 [00:00<00:00, 150.87it/s]Animation 32: FadeOut(VGroup of 2 submobjects), etc.:  78%|███████▊  | 47/60 [00:00<00:00, 153.94it/s]                                                                                                                          INFO     Animation 32 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00032.mp4'                                   
+[11/11/26 12:16:11] INFO     Caching disabled.              cairo_renderer.py:89
+Animation 33: FadeIn(VGroup of 2 submobjects):   0%|          | 0/60 [00:00<?, ?it/s]Animation 33: FadeIn(VGroup of 2 submobjects):  30%|███       | 18/60 [00:00<00:00, 179.37it/s]Animation 33: FadeIn(VGroup of 2 submobjects):  60%|██████    | 36/60 [00:00<00:00, 178.11it/s]Animation 33: FadeIn(VGroup of 2 submobjects):  90%|█████████ | 54/60 [00:00<00:00, 169.96it/s]                                                                                                                   INFO     Animation 33 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00033.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 34: FadeIn(Text('Energy swing-up')), etc.:   0%|          | 0/24 [00:00<?, ?it/s]                                                                                                               INFO     Animation 34 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00034.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 35: FadeIn(Rectangle), etc.:   0%|          | 0/18 [00:00<?, ?it/s]                                                                                                 INFO     Animation 35 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00035.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 36: FadeIn(Text('RL swing-up (SAC)')), etc.:   0%|          | 0/24 [00:00<?, ?it/s]                                                                                             [11/11/26 12:16:12] INFO     Animation 36 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00036.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 37: FadeIn(Rectangle), etc.:   0%|          | 0/18 [00:00<?, ?it/s]                                                                                                 INFO     Animation 37 : Partial     scene_file_writer.py:173
+                             movie file written in                              
+                             '/Users/bhargav_vemparala/                         
+                             Documents/Academics/Semest                         
+                             er-3/ST/project/phase5_rl/                         
+                             manim-sim/media/videos/rl_                         
+                             vs_energy/1440p60/partial_                         
+                             movie_files/RLvsEnergy/unc                         
+                             ached_00037.mp4'                                   
+                    INFO     Caching disabled.              cairo_renderer.py:89
+Animation 38: _MethodAnimation(ValueTracker):   0%|          | 0/720 [00:00<?, ?it/s]Animation 38: _MethodAnimation(ValueTracker):   0%|          | 2/720 [00:00<01:16,  9.44it/s]Animation 38: _MethodAnimation(ValueTracker):   1%|          | 4/720 [00:00<00:57, 12.53it/s]Animation 38: _MethodAnimation(ValueTracker):   1%|          | 6/720 [00:00<00:51, 13.92it/s]Animation 38: _MethodAnimation(ValueTracker):   1%|          | 8/720 [00:00<00:48, 14.83it/s]Animation 38: _MethodAnimation(ValueTracker):   1%|▏         | 10/720 [00:00<00:45, 15.52it/s]Animation 38: _MethodAnimation(ValueTracker):   2%|▏         | 12/720 [00:00<00:44, 15.87it/s]Animation 38: _MethodAnimation(ValueTracker):   2%|▏         | 14/720 [00:00<00:43, 16.07it/s]Animation 38: _MethodAnimation(ValueTracker):   2%|▏         | 16/720 [00:01<00:43, 16.29it/s]Animation 38: _MethodAnimation(ValueTracker):   2%|▎         | 18/720 [00:01<00:43, 16.28it/s]Animation 38: _MethodAnimation(ValueTracker):   3%|▎         | 20/720 [00:01<00:42, 16.30it/s]Animation 38: _MethodAnimation(ValueTracker):   3%|▎         | 22/720 [00:01<00:43, 16.01it/s]Animation 38: _MethodAnimation(ValueTracker):   3%|▎         | 24/720 [00:01<00:44, 15.63it/s]Animation 38: _MethodAnimation(ValueTracker):   4%|▎         | 26/720 [00:01<00:44, 15.67it/s]Animation 38: _MethodAnimation(ValueTracker):   4%|▍         | 28/720 [00:01<00:44, 15.57it/s]Animation 38: _MethodAnimation(ValueTracker):   4%|▍         | 30/720 [00:01<00:44, 15.48it/s]Animation 38: _MethodAnimation(ValueTracker):   4%|▍         | 32/720 [00:02<00:44, 15.49it/s]Animation 38: _MethodAnimation(ValueTracker):   5%|▍         | 34/720 [00:02<00:44, 15.46it/s]Animation 38: _MethodAnimation(ValueTracker):   5%|▌         | 36/720 [00:02<00:44, 15.36it/s]Animation 38: _MethodAnimation(ValueTracker):   5%|▌         | 38/720 [00:02<00:44, 15.44it/s]Animation 38: _MethodAnimation(ValueTracker):   6%|▌         | 40/720 [00:02<00:44, 15.33it/s]Animation 38: _MethodAnimation(ValueTracker):   6%|▌         | 42/720 [00:02<00:45, 14.93it/s]Animation 38: _MethodAnimation(ValueTracker):   6%|▌         | 44/720 [00:02<00:47, 14.08it/s]Animation 38: _MethodAnimation(ValueTracker):   6%|▋         | 46/720 [00:03<00:52, 12.77it/s]Animation 38: _MethodAnimation(ValueTracker):   7%|▋         | 48/720 [00:03<00:50, 13.30it/s]Animation 38: _MethodAnimation(ValueTracker):   7%|▋         | 50/720 [00:03<00:48, 13.77it/s]Animation 38: _MethodAnimation(ValueTracker):   7%|▋         | 52/720 [00:03<00:47, 14.06it/s]Animation 38: _MethodAnimation(ValueTracker):   8%|▊         | 54/720 [00:03<00:46, 14.31it/s]Animation 38: _MethodAnimation(ValueTracker):   8%|▊         | 56/720 [00:03<00:45, 14.46it/s]Animation 38: _MethodAnimation(ValueTracker):   8%|▊         | 58/720 [00:03<00:45, 14.66it/s]Animation 38: _MethodAnimation(ValueTracker):   8%|▊         | 60/720 [00:04<00:45, 14.58it/s]Animation 38: _MethodAnimation(ValueTracker):   9%|▊         | 62/720 [00:04<00:44, 14.80it/s]Animation 38: _MethodAnimation(ValueTracker):   9%|▉         | 64/720 [00:04<00:43, 14.99it/s]Animation 38: _MethodAnimation(ValueTracker):   9%|▉         | 66/720 [00:04<00:43, 15.16it/s]Animation 38: _MethodAnimation(ValueTracker):   9%|▉         | 68/720 [00:04<00:42, 15.23it/s]Animation 38: _MethodAnimation(ValueTracker):  10%|▉         | 70/720 [00:04<00:42, 15.24it/s]Animation 38: _MethodAnimation(ValueTracker):  10%|█         | 72/720 [00:04<00:42, 15.35it/s]Animation 38: _MethodAnimation(ValueTracker):  10%|█         | 74/720 [00:04<00:42, 15.37it/s]Animation 38: _MethodAnimation(ValueTracker):  11%|█         | 76/720 [00:05<00:42, 15.31it/s]Animation 38: _MethodAnimation(ValueTracker):  11%|█         | 78/720 [00:05<00:42, 15.18it/s]Animation 38: _MethodAnimation(ValueTracker):  11%|█         | 80/720 [00:05<00:43, 14.88it/s]Animation 38: _MethodAnimation(ValueTracker):  11%|█▏        | 82/720 [00:05<00:42, 15.04it/s]Animation 38: _MethodAnimation(ValueTracker):  12%|█▏        | 84/720 [00:05<00:42, 15.12it/s]Animation 38: _MethodAnimation(ValueTracker):  12%|█▏        | 86/720 [00:05<00:41, 15.32it/s]Animation 38: _MethodAnimation(ValueTracker):  12%|█▏        | 88/720 [00:05<00:41, 15.34it/s]Animation 38: _MethodAnimation(ValueTracker):  12%|█▎        | 90/720 [00:06<00:41, 15.29it/s]Animation 38: _MethodAnimation(ValueTracker):  13%|█▎        | 92/720 [00:06<00:41, 15.29it/s]Animation 38: _MethodAnimation(ValueTracker):  13%|█▎        | 94/720 [00:06<00:41, 15.19it/s]Animation 38: _MethodAnimation(ValueTracker):  13%|█▎        | 96/720 [00:06<00:41, 15.15it/s]Animation 38: _MethodAnimation(ValueTracker):  14%|█▎        | 98/720 [00:06<00:41, 15.13it/s]Animation 38: _MethodAnimation(ValueTracker):  14%|█▍        | 100/720 [00:06<00:41, 14.95it/s]Animation 38: _MethodAnimation(ValueTracker):  14%|█▍        | 102/720 [00:06<00:40, 15.07it/s]Animation 38: _MethodAnimation(ValueTracker):  14%|█▍        | 104/720 [00:06<00:40, 15.16it/s]Animation 38: _MethodAnimation(ValueTracker):  15%|█▍        | 106/720 [00:07<00:40, 15.19it/s]Animation 38: _MethodAnimation(ValueTracker):  15%|█▌        | 108/720 [00:07<00:41, 14.67it/s]Animation 38: _MethodAnimation(ValueTracker):  15%|█▌        | 110/720 [00:07<00:42, 14.27it/s]Animation 38: _MethodAnimation(ValueTracker):  16%|█▌        | 112/720 [00:07<00:43, 14.02it/s]Animation 38: _MethodAnimation(ValueTracker):  16%|█▌        | 114/720 [00:07<00:43, 13.81it/s]Animation 38: _MethodAnimation(ValueTracker):  16%|█▌        | 116/720 [00:07<00:44, 13.68it/s]Animation 38: _MethodAnimation(ValueTracker):  16%|█▋        | 118/720 [00:07<00:44, 13.43it/s]Animation 38: _MethodAnimation(ValueTracker):  17%|█▋        | 120/720 [00:08<00:44, 13.56it/s]Animation 38: _MethodAnimation(ValueTracker):  17%|█▋        | 122/720 [00:08<00:43, 13.70it/s]Animation 38: _MethodAnimation(ValueTracker):  17%|█▋        | 124/720 [00:08<00:42, 13.88it/s]Animation 38: _MethodAnimation(ValueTracker):  18%|█▊        | 126/720 [00:08<00:42, 13.90it/s]Animation 38: _MethodAnimation(ValueTracker):  18%|█▊        | 128/720 [00:08<00:42, 13.91it/s]Animation 38: _MethodAnimation(ValueTracker):  18%|█▊        | 130/720 [00:08<00:42, 13.94it/s]Animation 38: _MethodAnimation(ValueTracker):  18%|█▊        | 132/720 [00:08<00:42, 13.78it/s]Animation 38: _MethodAnimation(ValueTracker):  19%|█▊        | 134/720 [00:09<00:43, 13.56it/s]Animation 38: _MethodAnimation(ValueTracker):  19%|█▉        | 136/720 [00:09<00:43, 13.33it/s]Animation 38: _MethodAnimation(ValueTracker):  19%|█▉        | 138/720 [00:09<00:44, 13.22it/s]Animation 38: _MethodAnimation(ValueTracker):  19%|█▉        | 140/720 [00:09<00:44, 13.08it/s]Animation 38: _MethodAnimation(ValueTracker):  20%|█▉        | 142/720 [00:09<00:44, 13.06it/s]Animation 38: _MethodAnimation(ValueTracker):  20%|██        | 144/720 [00:09<00:44, 12.90it/s]Animation 38: _MethodAnimation(ValueTracker):  20%|██        | 146/720 [00:10<00:44, 12.95it/s]Animation 38: _MethodAnimation(ValueTracker):  21%|██        | 148/720 [00:10<00:44, 12.98it/s]Animation 38: _MethodAnimation(ValueTracker):  21%|██        | 150/720 [00:10<00:43, 12.99it/s]Animation 38: _MethodAnimation(ValueTracker):  21%|██        | 152/720 [00:10<00:43, 12.99it/s]Animation 38: _MethodAnimation(ValueTracker):  21%|██▏       | 154/720 [00:10<00:43, 12.99it/s]Animation 38: _MethodAnimation(ValueTracker):  22%|██▏       | 156/720 [00:10<00:43, 13.01it/s]Animation 38: _MethodAnimation(ValueTracker):  22%|██▏       | 158/720 [00:10<00:43, 12.95it/s]Animation 38: _MethodAnimation(ValueTracker):  22%|██▏       | 160/720 [00:11<00:43, 12.93it/s]Animation 38: _MethodAnimation(ValueTracker):  22%|██▎       | 162/720 [00:11<00:43, 12.95it/s]Animation 38: _MethodAnimation(ValueTracker):  23%|██▎       | 164/720 [00:11<00:42, 12.99it/s]Animation 38: _MethodAnimation(ValueTracker):  23%|██▎       | 166/720 [00:11<00:42, 12.96it/s]Animation 38: _MethodAnimation(ValueTracker):  23%|██▎       | 168/720 [00:11<00:42, 12.86it/s]Animation 38: _MethodAnimation(ValueTracker):  24%|██▎       | 170/720 [00:11<00:44, 12.49it/s]Animation 38: _MethodAnimation(ValueTracker):  24%|██▍       | 172/720 [00:12<00:43, 12.58it/s]Animation 38: _MethodAnimation(ValueTracker):  24%|██▍       | 174/720 [00:12<00:43, 12.56it/s]Animation 38: _MethodAnimation(ValueTracker):  24%|██▍       | 176/720 [00:12<00:42, 12.67it/s]Animation 38: _MethodAnimation(ValueTracker):  25%|██▍       | 178/720 [00:12<00:42, 12.78it/s]Animation 38: _MethodAnimation(ValueTracker):  25%|██▌       | 180/720 [00:12<00:41, 12.86it/s]Animation 38: _MethodAnimation(ValueTracker):  25%|██▌       | 182/720 [00:12<00:41, 12.92it/s]Animation 38: _MethodAnimation(ValueTracker):  26%|██▌       | 184/720 [00:13<00:41, 12.94it/s]Animation 38: _MethodAnimation(ValueTracker):  26%|██▌       | 186/720 [00:13<00:41, 12.94it/s]Animation 38: _MethodAnimation(ValueTracker):  26%|██▌       | 188/720 [00:13<00:41, 12.75it/s]Animation 38: _MethodAnimation(ValueTracker):  26%|██▋       | 190/720 [00:13<00:41, 12.77it/s]Animation 38: _MethodAnimation(ValueTracker):  27%|██▋       | 192/720 [00:13<00:41, 12.79it/s]Animation 38: _MethodAnimation(ValueTracker):  27%|██▋       | 194/720 [00:13<00:41, 12.64it/s]Animation 38: _MethodAnimation(ValueTracker):  27%|██▋       | 196/720 [00:13<00:41, 12.75it/s]Animation 38: _MethodAnimation(ValueTracker):  28%|██▊       | 198/720 [00:14<00:40, 12.81it/s]Animation 38: _MethodAnimation(ValueTracker):  28%|██▊       | 200/720 [00:14<00:40, 12.87it/s]Animation 38: _MethodAnimation(ValueTracker):  28%|██▊       | 202/720 [00:14<00:40, 12.86it/s]Animation 38: _MethodAnimation(ValueTracker):  28%|██▊       | 204/720 [00:14<00:39, 12.93it/s]Animation 38: _MethodAnimation(ValueTracker):  29%|██▊       | 206/720 [00:14<00:39, 13.03it/s]Animation 38: _MethodAnimation(ValueTracker):  29%|██▉       | 208/720 [00:14<00:39, 12.89it/s]Animation 38: _MethodAnimation(ValueTracker):  29%|██▉       | 210/720 [00:15<00:40, 12.61it/s]Animation 38: _MethodAnimation(ValueTracker):  29%|██▉       | 212/720 [00:15<00:40, 12.52it/s]Animation 38: _MethodAnimation(ValueTracker):  30%|██▉       | 214/720 [00:15<00:40, 12.49it/s]Animation 38: _MethodAnimation(ValueTracker):  30%|███       | 216/720 [00:15<00:40, 12.50it/s]Animation 38: _MethodAnimation(ValueTracker):  30%|███       | 218/720 [00:15<00:40, 12.49it/s]Animation 38: _MethodAnimation(ValueTracker):  31%|███       | 220/720 [00:15<00:39, 12.51it/s]Animation 38: _MethodAnimation(ValueTracker):  31%|███       | 222/720 [00:16<00:40, 12.41it/s]Animation 38: _MethodAnimation(ValueTracker):  31%|███       | 224/720 [00:16<00:39, 12.51it/s]Animation 38: _MethodAnimation(ValueTracker):  31%|███▏      | 226/720 [00:16<00:39, 12.53it/s]Animation 38: _MethodAnimation(ValueTracker):  32%|███▏      | 228/720 [00:16<00:39, 12.39it/s]Animation 38: _MethodAnimation(ValueTracker):  32%|███▏      | 230/720 [00:16<00:39, 12.31it/s]Animation 38: _MethodAnimation(ValueTracker):  32%|███▏      | 232/720 [00:16<00:39, 12.30it/s]Animation 38: _MethodAnimation(ValueTracker):  32%|███▎      | 234/720 [00:16<00:39, 12.33it/s]Animation 38: _MethodAnimation(ValueTracker):  33%|███▎      | 236/720 [00:17<00:39, 12.32it/s]Animation 38: _MethodAnimation(ValueTracker):  33%|███▎      | 238/720 [00:17<00:38, 12.39it/s]Animation 38: _MethodAnimation(ValueTracker):  33%|███▎      | 240/720 [00:17<00:38, 12.51it/s]Animation 38: _MethodAnimation(ValueTracker):  34%|███▎      | 242/720 [00:17<00:37, 12.65it/s]Animation 38: _MethodAnimation(ValueTracker):  34%|███▍      | 244/720 [00:17<00:37, 12.73it/s]Animation 38: _MethodAnimation(ValueTracker):  34%|███▍      | 246/720 [00:17<00:37, 12.76it/s]Animation 38: _MethodAnimation(ValueTracker):  34%|███▍      | 248/720 [00:18<00:37, 12.64it/s]Animation 38: _MethodAnimation(ValueTracker):  35%|███▍      | 250/720 [00:18<00:36, 12.76it/s]Animation 38: _MethodAnimation(ValueTracker):  35%|███▌      | 252/720 [00:18<00:36, 12.89it/s]Animation 38: _MethodAnimation(ValueTracker):  35%|███▌      | 254/720 [00:18<00:35, 13.00it/s]Animation 38: _MethodAnimation(ValueTracker):  36%|███▌      | 256/720 [00:18<00:35, 13.07it/s]Animation 38: _MethodAnimation(ValueTracker):  36%|███▌      | 258/720 [00:18<00:35, 13.02it/s]Animation 38: _MethodAnimation(ValueTracker):  36%|███▌      | 260/720 [00:19<00:35, 12.94it/s]Animation 38: _MethodAnimation(ValueTracker):  36%|███▋      | 262/720 [00:19<00:35, 12.93it/s]Animation 38: _MethodAnimation(ValueTracker):  37%|███▋      | 264/720 [00:19<00:35, 12.90it/s]Animation 38: _MethodAnimation(ValueTracker):  37%|███▋      | 266/720 [00:19<00:35, 12.96it/s]Animation 38: _MethodAnimation(ValueTracker):  37%|███▋      | 268/720 [00:19<00:34, 12.99it/s]Animation 38: _MethodAnimation(ValueTracker):  38%|███▊      | 270/720 [00:19<00:34, 12.98it/s]Animation 38: _MethodAnimation(ValueTracker):  38%|███▊      | 272/720 [00:19<00:34, 12.92it/s]Animation 38: _MethodAnimation(ValueTracker):  38%|███▊      | 274/720 [00:20<00:34, 12.89it/s]Animation 38: _MethodAnimation(ValueTracker):  38%|███▊      | 276/720 [00:20<00:34, 12.85it/s]Animation 38: _MethodAnimation(ValueTracker):  39%|███▊      | 278/720 [00:20<00:34, 12.66it/s]Animation 38: _MethodAnimation(ValueTracker):  39%|███▉      | 280/720 [00:20<00:34, 12.75it/s]Animation 38: _MethodAnimation(ValueTracker):  39%|███▉      | 282/720 [00:20<00:34, 12.82it/s]Animation 38: _MethodAnimation(ValueTracker):  39%|███▉      | 284/720 [00:20<00:33, 12.90it/s]Animation 38: _MethodAnimation(ValueTracker):  40%|███▉      | 286/720 [00:21<00:33, 12.83it/s]Animation 38: _MethodAnimation(ValueTracker):  40%|████      | 288/720 [00:21<00:33, 12.80it/s]Animation 38: _MethodAnimation(ValueTracker):  40%|████      | 290/720 [00:21<00:33, 12.82it/s]Animation 38: _MethodAnimation(ValueTracker):  41%|████      | 292/720 [00:21<00:33, 12.86it/s]Animation 38: _MethodAnimation(ValueTracker):  41%|████      | 294/720 [00:21<00:33, 12.83it/s]Animation 38: _MethodAnimation(ValueTracker):  41%|████      | 296/720 [00:21<00:33, 12.83it/s]Animation 38: _MethodAnimation(ValueTracker):  41%|████▏     | 298/720 [00:21<00:33, 12.73it/s]Animation 38: _MethodAnimation(ValueTracker):  42%|████▏     | 300/720 [00:22<00:33, 12.70it/s]Animation 38: _MethodAnimation(ValueTracker):  42%|████▏     | 302/720 [00:22<00:33, 12.65it/s]Animation 38: _MethodAnimation(ValueTracker):  42%|████▏     | 304/720 [00:22<00:32, 12.68it/s]Animation 38: _MethodAnimation(ValueTracker):  42%|████▎     | 306/720 [00:22<00:32, 12.56it/s]Animation 38: _MethodAnimation(ValueTracker):  43%|████▎     | 308/720 [00:22<00:32, 12.70it/s]Animation 38: _MethodAnimation(ValueTracker):  43%|████▎     | 310/720 [00:22<00:32, 12.74it/s]Animation 38: _MethodAnimation(ValueTracker):  43%|████▎     | 312/720 [00:23<00:31, 12.78it/s]Animation 38: _MethodAnimation(ValueTracker):  44%|████▎     | 314/720 [00:23<00:31, 12.78it/s]Animation 38: _MethodAnimation(ValueTracker):  44%|████▍     | 316/720 [00:23<00:31, 12.79it/s]Animation 38: _MethodAnimation(ValueTracker):  44%|████▍     | 318/720 [00:23<00:31, 12.79it/s]Animation 38: _MethodAnimation(ValueTracker):  44%|████▍     | 320/720 [00:23<00:31, 12.77it/s]Animation 38: _MethodAnimation(ValueTracker):  45%|████▍     | 322/720 [00:23<00:31, 12.72it/s]Animation 38: _MethodAnimation(ValueTracker):  45%|████▌     | 324/720 [00:24<00:31, 12.68it/s]Animation 38: _MethodAnimation(ValueTracker):  45%|████▌     | 326/720 [00:24<00:31, 12.62it/s]Animation 38: _MethodAnimation(ValueTracker):  46%|████▌     | 328/720 [00:24<00:31, 12.62it/s]Animation 38: _MethodAnimation(ValueTracker):  46%|████▌     | 330/720 [00:24<00:31, 12.53it/s]Animation 38: _MethodAnimation(ValueTracker):  46%|████▌     | 332/720 [00:24<00:30, 12.63it/s]Animation 38: _MethodAnimation(ValueTracker):  46%|████▋     | 334/720 [00:24<00:30, 12.67it/s]Animation 38: _MethodAnimation(ValueTracker):  47%|████▋     | 336/720 [00:24<00:30, 12.54it/s]Animation 38: _MethodAnimation(ValueTracker):  47%|████▋     | 338/720 [00:25<00:30, 12.54it/s]Animation 38: _MethodAnimation(ValueTracker):  47%|████▋     | 340/720 [00:25<00:30, 12.63it/s]Animation 38: _MethodAnimation(ValueTracker):  48%|████▊     | 342/720 [00:25<00:29, 12.77it/s]Animation 38: _MethodAnimation(ValueTracker):  48%|████▊     | 344/720 [00:25<00:29, 12.87it/s]Animation 38: _MethodAnimation(ValueTracker):  48%|████▊     | 346/720 [00:25<00:29, 12.81it/s]Animation 38: _MethodAnimation(ValueTracker):  48%|████▊     | 348/720 [00:25<00:29, 12.77it/s]run_pipeline.sh: line 29: 79220 Terminated: 15          manim -r 2560,1440 --fps 60 --disable_caching rl_vs_energy.py RLvsEnergy
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown: {'/mp-42ck1k6j'}
+  warnings.warn(

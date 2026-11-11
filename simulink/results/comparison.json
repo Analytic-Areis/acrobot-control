@@ -1,0 +1,30 @@
+{
+  "K_matlab": [
+    -503.033293582122,
+    -203.889540430803,
+    -218.336855394238,
+    -101.522531437506
+  ],
+  "K_python": [
+    -503.03329358205974,
+    -203.88954043077632,
+    -218.3368553942125,
+    -101.52253143749168
+  ],
+  "K_rel_diff": 1.237364294704104e-13,
+  "openloop_E1_max_diff_deg": 6.852187005745e-11,
+  "openloop_E3_max_diff_deg": 1.098181920415723e-10,
+  "lqr_E3_2_max_diff_deg": 4.203421067022184e-11,
+  "lqr_E3_2_held_simulink": true,
+  "lqr_E3_2_held_python": true,
+  "lqr_E3_5.5_max_diff_deg": 5.961631694935215e-11,
+  "lqr_E3_5.5_held_simulink": true,
+  "lqr_E3_5.5_held_python": true,
+  "lqr_E3_7.5_max_diff_deg": 0.16962945981362823,
+  "lqr_E3_7.5_held_simulink": false,
+  "lqr_E3_7.5_held_python": false,
+  "swingup_catch_simulink_s": 2.16691466130488,
+  "swingup_catch_python_s": 2.1669335764639,
+  "swingup_max_diff_deg": 0.006606749956538937,
+  "swingup_peak_tau": 20.0
+}
